@@ -25,7 +25,7 @@ It's built for the field practitioner conversation: "what firmware are we on for
 - Slide-over detail panel: firmware GA/Recommended/Feature versions with copy-to-clipboard, deployment variants, doc links (Admin Guide, Release Notes, Cookbook, Datasheet, Firmware Download), cloud-specific docs, lifecycle status, tag chips, data-checked-on date.
 - Cloud-managed products show a "Cloud / SaaS" pill instead of a firmware version, with a "Cloud-managed — no firmware versioning" note in the detail panel.
 - Weekly GitHub Actions scraper refreshes firmware data automatically from docs.fortinet.com.
-- Cloudflare Pages-ready (`npm run build` -> `dist/`).
+- Static build (`npm run build` -> `dist/`) — deploys cleanly to Railway, Cloudflare Pages, Vercel, Netlify, or any static host.
 - Plain React + Vite, no TypeScript, no backend.
 
 ## Screenshots
@@ -187,15 +187,19 @@ FortiSearch is built to drop into the [adhd-tools](https://tools.tannerharrison.
 
 The standalone FortiSearch nav (`src/components/Nav.jsx`) already includes back-links to the toolbox so users land in the right place when they came in via a direct URL.
 
-## Deployment (Cloudflare Pages)
+## Deployment (Railway)
 
-1. Connect the GitHub repo to Cloudflare Pages.
-2. Build command: `npm run build`
-3. Build output directory: `dist`
-4. Node version: `20`
-5. Optionally bind a custom domain (e.g. `search.tannerharrison.com`).
+FortiSearch ships on Railway with a custom Cloudflare-fronted domain, the same pattern used by `fmg-demo`, `faz-health`, and `pov`.
 
-The `.github/workflows/deploy.yml` workflow is informational — it validates the build on every push to `main` and uploads an artifact. If you'd rather drive deploys from GitHub Actions instead of Cloudflare's GitHub integration, uncomment the `cloudflare/pages-action@v1` block and set `CF_API_TOKEN` and `CF_ACCOUNT_ID` repo secrets.
+1. Railway → **New Project** → **Deploy from GitHub** → pick `tannerharris0n/FortiSearch`.
+2. Railway auto-detects the Vite app via `railway.json` and runs `npm run build`.
+3. Variables: `NODE_ENV=production` (no other env vars required — FortiSearch has no backend secrets).
+4. Settings → **Domains** → add the custom subdomain (e.g. `search.tannerharrison.com`).
+5. Cloudflare DNS: add a CNAME record pointing the subdomain at the Railway target. DNS-only until the cert is issued, Proxied is optional after.
+
+The `.github/workflows/deploy.yml` workflow only validates the build on every push to `main` and uploads an artifact — Railway pulls directly from GitHub and rebuilds itself when the branch updates.
+
+> **Alternative: Cloudflare Pages.** The original build spec suggested Cloudflare Pages, which also works (build `npm run build`, output `dist/`, Node 20). The shipped version uses Railway because the maintainer already runs the rest of the toolbox there; the static `dist/` output is portable to either host.
 
 ## Limitations
 
@@ -213,11 +217,11 @@ For the maintainer: **$0/month** under typical use.
 | Layer | Cost |
 | --- | --- |
 | GitHub Actions (weekly scraper) | **Free.** Public repos get unlimited Actions minutes. Each scraper run is ~2-3 min on `ubuntu-latest`. |
-| Cloudflare Pages hosting | **Free.** Free tier covers 500 builds/month, 100k requests/day, unlimited bandwidth. FortiSearch will use a handful of builds/month and minimal traffic. |
+| Railway hosting | Free $5/month trial credit covers a static Vite app comfortably (no backend container, low memory). Past trial, hobby tier is ~$5/month minimum if you keep the service warm. Cloudflare Pages would be a $0 alternative if you don't want any Railway spend. |
 | Anthropic / LLM API | **$0.** FortiSearch makes no LLM calls — it's a static site over JSON. (FortiCLI is the BYOK LLM tool; FortiSearch is not.) |
 | Domain | Whatever you already pay for `tannerharrison.com`. Subdomain DNS via Cloudflare is free. |
 
-If the repo is made **private**, GitHub Actions still falls inside the 2,000-minute/month free tier (weekly runs use ~12 min/month). The only way to incur cost is exceeding Cloudflare's free request quota, which would require a large-scale traffic event.
+If the repo is made **private**, GitHub Actions still falls inside the 2,000-minute/month free tier (weekly runs use ~12 min/month). The only realistic cost lever is Railway's hobby tier; if that ever matters, the same `dist/` output drops onto Cloudflare Pages or Netlify for $0.
 
 The scraper hits ~70 Fortinet public pages per run. That's well under any rate limit Fortinet enforces; if they ever pushed back, the scraper would log failures and preserve prior data without crashing the site.
 
