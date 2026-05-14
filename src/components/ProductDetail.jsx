@@ -124,26 +124,41 @@ export default function ProductDetail({ product, onClose }) {
         <div className="px-6 sm:px-7 py-6 space-y-7">
           <Section title="Firmware Versions">
             {fw ? (
-              <div className="grid grid-cols-3 gap-2.5">
-                <div>
-                  <div className="text-[10.5px] font-mono uppercase tracking-wider text-inkFaint mb-1.5">
-                    Recommended
+              fw.ga || fw.recommended || fw.feature ? (
+                <div className="grid grid-cols-3 gap-2.5">
+                  <div>
+                    <div className="text-[10.5px] font-mono uppercase tracking-wider text-inkFaint mb-1.5">
+                      Recommended
+                    </div>
+                    <CopyableVersion value={fw.recommended} />
                   </div>
-                  <CopyableVersion value={fw.recommended} />
-                </div>
-                <div>
-                  <div className="text-[10.5px] font-mono uppercase tracking-wider text-inkFaint mb-1.5">
-                    GA
+                  <div>
+                    <div className="text-[10.5px] font-mono uppercase tracking-wider text-inkFaint mb-1.5">
+                      GA
+                    </div>
+                    <CopyableVersion value={fw.ga} />
                   </div>
-                  <CopyableVersion value={fw.ga} />
-                </div>
-                <div>
-                  <div className="text-[10.5px] font-mono uppercase tracking-wider text-inkFaint mb-1.5">
-                    Feature
+                  <div>
+                    <div className="text-[10.5px] font-mono uppercase tracking-wider text-inkFaint mb-1.5">
+                      Feature
+                    </div>
+                    <CopyableVersion value={fw.feature} />
                   </div>
-                  <CopyableVersion value={fw.feature} />
                 </div>
-              </div>
+              ) : (
+                <div className="px-3 py-2.5 rounded-lg bg-surfaceAlt border border-border text-inkDim text-[13px] leading-relaxed">
+                  Version not yet verified. The weekly scraper populates this from{' '}
+                  <a
+                    href={product.links?.docs || 'https://docs.fortinet.com'}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-forti hover:underline"
+                  >
+                    docs.fortinet.com
+                  </a>
+                  . Cross-reference the docs hub or release notes directly for an authoritative answer.
+                </div>
+              )
             ) : (
               <div className="px-3 py-2.5 rounded-lg bg-infoDim border border-infoBorder text-info text-[13px]">
                 Cloud-managed &mdash; no firmware versioning
@@ -169,10 +184,11 @@ export default function ProductDetail({ product, onClose }) {
           <Section title="Documentation">
             <div className="space-y-1.5">
               <LinkRow label="Docs Hub" href={product.links?.docs} />
+              <LinkRow label="4-D Architecture Guides" href={product.links?.architectureDocs} />
               <LinkRow label="Admin Guide" href={product.links?.adminGuide} />
               <LinkRow label="Release Notes" href={product.links?.releaseNotes} />
               <LinkRow label="Cookbook Search" href={product.links?.cookbookSearch} />
-              {(!product.links?.docs && !product.links?.adminGuide && !product.links?.releaseNotes) && (
+              {(!product.links?.docs && !product.links?.architectureDocs) && (
                 <div className="text-[12.5px] text-inkFaint italic">No doc links recorded.</div>
               )}
             </div>

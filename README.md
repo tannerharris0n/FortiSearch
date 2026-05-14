@@ -86,10 +86,23 @@ SaaS/cloud-only products carry `firmware: null` in the JSON and are skipped by t
 Each non-SaaS product carries three firmware tracks pulled from Fortinet's official guidance:
 
 - **GA** — the highest released version on the current major train. What "latest" usually means.
-- **Recommended** — Fortinet's PSIRT-recommended stable version. Sometimes lags GA by a point release while Fortinet validates against the install base. **This is what you should generally deploy.**
+- **Recommended** — Fortinet's PSIRT-recommended stable version. Sometimes lags GA by a point release while Fortinet validates against the install base. **This is what you should generally deploy.** Sourced from the [Recommended release for FortiOS KB article](https://community.fortinet.com/t5/FortiGate/Technical-Tip-Recommended-release-for-FortiOS/ta-p/227178) (and the per-product equivalents).
 - **Feature** — the newest feature-train release. New capabilities first, larger chance of regressions. For lab and validation work.
 
 Plus `lastChecked` (when the scraper last saw this entry) and `lastUpdated` (when the GA value last changed). The card badge color reflects `lastChecked` age: green ≤7d, amber 8-30d, red >30d.
+
+### Current state of firmware data
+
+The initial commit only included **hand-verified firmware for the FortiOS family** (FortiGate, FortiGate 5000/6000/7000, FortiCarrier) — `ga` 7.6.6, `recommended` 7.6.6, `feature` 8.0.0 as of 2026-05-13. Every other product carries `firmware.ga: null` and renders a "version pending" badge until the weekly scraper populates it. This is intentional — the original catalog seed used invented version numbers and was corrected per the original spec's "use null if unsure" rule. Manually verify any specific version against [docs.fortinet.com](https://docs.fortinet.com) before relying on it.
+
+### Authoritative sources
+
+The detail panel includes direct links for cross-referencing:
+
+- **Docs Hub** — `docs.fortinet.com/product/<slug>` for the product's full doc tree.
+- **4-D Architecture Guides** — the [Fortinet 4-D reference architectures](https://docs.fortinet.com/4d-resources) (Define, Design, Deploy, Demo) per solution area: NGFW, SD-WAN, SASE, ZTNA, Switching, Wireless, IAM, WAF, ADC.
+- **Lifecycle status** — the [Fortinet Product Life Cycle portal](https://support.fortinet.com/Information/ProductLifeCycle.aspx) for EOO / EOS / LSED dates.
+- **Firmware Download** — the support portal (`support.fortinet.com/Download/FirmwareImages.aspx`); requires a Fortinet support login.
 
 ## Local development
 
@@ -189,8 +202,24 @@ The `.github/workflows/deploy.yml` workflow is informational — it validates th
 - **Firmware downloads still need a Fortinet support portal login.** The "Firmware Download" link sends you to support.fortinet.com — FortiSearch can't mirror the binaries.
 - **The scraper depends on Fortinet's public HTML structure.** If docs.fortinet.com restructures its product pages, the version parser may need updating. Failures are logged and don't overwrite known-good data.
 - **No PSIRT/CVE tracking yet.** Planned next pass: pull Fortinet PSIRT advisories per product and surface a security badge on affected versions.
-- **`recommended` and `feature` versions** are hand-curated for now. The scraper currently only refreshes `ga`. Expanding to all three tracks is on the roadmap.
+- **`recommended` and `feature` versions** are hand-curated. The scraper only refreshes `ga`. Expanding the scraper to walk the recommended-release KB articles is on the roadmap.
+- **Initial firmware coverage is FortiOS family only.** Every other product is `version pending` until the weekly scraper run populates it. See [Current state of firmware data](#current-state-of-firmware-data).
 - **Catalog snapshot is May 2026.** Quarterly hand-review keeps subcategory/lifecycle data accurate; the weekly scraper keeps versions accurate.
+
+## What does it cost to run?
+
+For the maintainer: **$0/month** under typical use.
+
+| Layer | Cost |
+| --- | --- |
+| GitHub Actions (weekly scraper) | **Free.** Public repos get unlimited Actions minutes. Each scraper run is ~2-3 min on `ubuntu-latest`. |
+| Cloudflare Pages hosting | **Free.** Free tier covers 500 builds/month, 100k requests/day, unlimited bandwidth. FortiSearch will use a handful of builds/month and minimal traffic. |
+| Anthropic / LLM API | **$0.** FortiSearch makes no LLM calls — it's a static site over JSON. (FortiCLI is the BYOK LLM tool; FortiSearch is not.) |
+| Domain | Whatever you already pay for `tannerharrison.com`. Subdomain DNS via Cloudflare is free. |
+
+If the repo is made **private**, GitHub Actions still falls inside the 2,000-minute/month free tier (weekly runs use ~12 min/month). The only way to incur cost is exceeding Cloudflare's free request quota, which would require a large-scale traffic event.
+
+The scraper hits ~70 Fortinet public pages per run. That's well under any rate limit Fortinet enforces; if they ever pushed back, the scraper would log failures and preserve prior data without crashing the site.
 
 ## License & disclaimer
 

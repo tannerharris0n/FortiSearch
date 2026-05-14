@@ -3,7 +3,7 @@
     "lastChecked": "2026-05-13",
     "checkFrequency": "weekly",
     "nextCheck": "2026-05-20",
-    "sourceNote": "Versions populated from docs.fortinet.com and verified against Fortinet PSIRT lifecycle pages. SaaS/cloud-only products carry no firmware version."
+    "sourceNote": "Versions are scraped weekly from docs.fortinet.com and cross-referenced against the Fortinet recommended-release KB. FortiOS-family firmware was hand-verified on 2026-05-13; other products are awaiting the next scraper run. Cloud / SaaS products carry no firmware version."
   },
   "uiCategories": [
     "All",
@@ -26,29 +26,45 @@
       "category": "Secure Networking",
       "subcategory": "Hybrid Mesh Firewall",
       "uiCategory": "Secure Networking",
-      "tags": ["NGFW", "SD-WAN", "ZTNA", "SSL Inspection", "OT", "firewall", "Security Fabric"],
-      "deploymentVariants": ["Appliance", "VM", "Public Cloud", "Private Cloud", "Cloud-Native (CNF)", "Container"],
+      "tags": [
+        "NGFW",
+        "SD-WAN",
+        "ZTNA",
+        "SSL Inspection",
+        "OT",
+        "firewall",
+        "Security Fabric"
+      ],
+      "deploymentVariants": [
+        "Appliance",
+        "VM",
+        "Public Cloud",
+        "Private Cloud",
+        "Cloud-Native (CNF)",
+        "Container"
+      ],
       "firmware": {
-        "ga": "7.4.5",
-        "recommended": "7.4.4",
-        "feature": "7.6.1",
+        "ga": "7.6.6",
+        "recommended": "7.6.6",
+        "feature": "8.0.0",
         "lastChecked": "2026-05-13",
-        "lastUpdated": null
+        "lastUpdated": "2026-05-13"
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/next-generation-firewall",
         "docs": "https://docs.fortinet.com/product/fortigate",
-        "releaseNotes": "https://docs.fortinet.com/document/fortigate/7.4.5/fortios-release-notes",
-        "adminGuide": "https://docs.fortinet.com/document/fortigate/7.4.0/administration-guide",
-        "datasheet": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortigate-fortios.pdf",
+        "releaseNotes": null,
+        "adminGuide": null,
+        "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources/NGFW"
       },
       "cloudDocs": {
         "aws": "https://docs.fortinet.com/product/fortigate-public-cloud/aws",
@@ -65,20 +81,28 @@
       "category": "Secure Networking",
       "subcategory": "Hybrid Mesh Firewall",
       "uiCategory": "Secure Networking",
-      "tags": ["chassis", "hyperscale", "data center", "NGFW", "carrier"],
-      "deploymentVariants": ["Chassis"],
+      "tags": [
+        "chassis",
+        "hyperscale",
+        "data center",
+        "NGFW",
+        "carrier"
+      ],
+      "deploymentVariants": [
+        "Chassis"
+      ],
       "firmware": {
-        "ga": "7.4.5",
-        "recommended": "7.4.4",
-        "feature": "7.6.1",
+        "ga": "7.6.6",
+        "recommended": "7.6.6",
+        "feature": "8.0.0",
         "lastChecked": "2026-05-13",
-        "lastUpdated": null
+        "lastUpdated": "2026-05-13"
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/next-generation-firewall/fortigate-high-end",
@@ -87,7 +111,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources/NGFW"
       }
     },
     {
@@ -97,20 +122,27 @@
       "category": "Secure Networking",
       "subcategory": "Hybrid Mesh Firewall",
       "uiCategory": "Secure Networking",
-      "tags": ["chassis", "hyperscale", "data center", "NGFW"],
-      "deploymentVariants": ["Chassis"],
+      "tags": [
+        "chassis",
+        "hyperscale",
+        "data center",
+        "NGFW"
+      ],
+      "deploymentVariants": [
+        "Chassis"
+      ],
       "firmware": {
-        "ga": "7.4.5",
-        "recommended": "7.4.4",
-        "feature": "7.6.1",
+        "ga": "7.6.6",
+        "recommended": "7.6.6",
+        "feature": "8.0.0",
         "lastChecked": "2026-05-13",
-        "lastUpdated": null
+        "lastUpdated": "2026-05-13"
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/next-generation-firewall/fortigate-high-end",
@@ -119,7 +151,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources/NGFW"
       }
     },
     {
@@ -129,20 +162,27 @@
       "category": "Secure Networking",
       "subcategory": "Hybrid Mesh Firewall",
       "uiCategory": "Secure Networking",
-      "tags": ["chassis", "hyperscale", "data center", "NGFW"],
-      "deploymentVariants": ["Chassis"],
+      "tags": [
+        "chassis",
+        "hyperscale",
+        "data center",
+        "NGFW"
+      ],
+      "deploymentVariants": [
+        "Chassis"
+      ],
       "firmware": {
-        "ga": "7.4.5",
-        "recommended": "7.4.4",
-        "feature": "7.6.1",
+        "ga": "7.6.6",
+        "recommended": "7.6.6",
+        "feature": "8.0.0",
         "lastChecked": "2026-05-13",
-        "lastUpdated": null
+        "lastUpdated": "2026-05-13"
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/next-generation-firewall/fortigate-high-end",
@@ -151,7 +191,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources/NGFW"
       }
     },
     {
@@ -161,20 +202,31 @@
       "category": "Secure Networking",
       "subcategory": "Hybrid Mesh Firewall",
       "uiCategory": "Secure Networking",
-      "tags": ["carrier-grade", "telco", "GTP", "NGFW", "mobile core", "SCTP", "5G"],
-      "deploymentVariants": ["Appliance", "VM"],
+      "tags": [
+        "carrier-grade",
+        "telco",
+        "GTP",
+        "NGFW",
+        "mobile core",
+        "SCTP",
+        "5G"
+      ],
+      "deploymentVariants": [
+        "Appliance",
+        "VM"
+      ],
       "firmware": {
-        "ga": "7.4.5",
-        "recommended": "7.4.4",
-        "feature": "7.6.1",
+        "ga": "7.6.6",
+        "recommended": "7.6.6",
+        "feature": "8.0.0",
         "lastChecked": "2026-05-13",
-        "lastUpdated": null
+        "lastUpdated": "2026-05-13"
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": "FortiGate variant for carrier and telco deployments. Licensed on supported FortiGate platforms.",
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/carrier",
@@ -183,7 +235,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources/NGFW"
       }
     },
     {
@@ -193,29 +246,41 @@
       "category": "Secure Networking",
       "subcategory": "NOC Management",
       "uiCategory": "Secure Networking",
-      "tags": ["centralized management", "policy", "configuration", "SD-WAN orchestration", "ADOM"],
-      "deploymentVariants": ["Appliance", "VM", "Public Cloud", "Private Cloud"],
+      "tags": [
+        "centralized management",
+        "policy",
+        "configuration",
+        "SD-WAN orchestration",
+        "ADOM"
+      ],
+      "deploymentVariants": [
+        "Appliance",
+        "VM",
+        "Public Cloud",
+        "Private Cloud"
+      ],
       "firmware": {
-        "ga": "7.4.4",
-        "recommended": "7.4.3",
-        "feature": "7.6.0",
-        "lastChecked": "2026-05-13",
+        "ga": null,
+        "recommended": null,
+        "feature": null,
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/management/fortimanager",
         "docs": "https://docs.fortinet.com/product/fortimanager",
-        "releaseNotes": "https://docs.fortinet.com/document/fortimanager/7.4.4/release-notes",
-        "adminGuide": "https://docs.fortinet.com/document/fortimanager/7.4.0/administration-guide",
+        "releaseNotes": null,
+        "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -225,20 +290,30 @@
       "category": "Secure Networking",
       "subcategory": "NOC Management",
       "uiCategory": "Secure Networking",
-      "tags": ["AI", "AIOps", "network operations", "anomaly detection", "NOC", "RCA"],
-      "deploymentVariants": ["VM", "Public Cloud"],
+      "tags": [
+        "AI",
+        "AIOps",
+        "network operations",
+        "anomaly detection",
+        "NOC",
+        "RCA"
+      ],
+      "deploymentVariants": [
+        "VM",
+        "Public Cloud"
+      ],
       "firmware": {
-        "ga": "2.2.0",
-        "recommended": "2.2.0",
+        "ga": null,
+        "recommended": null,
         "feature": null,
-        "lastChecked": "2026-05-13",
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/fortiaiops",
@@ -247,7 +322,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -257,20 +333,28 @@
       "category": "Secure Networking",
       "subcategory": "NOC Management",
       "uiCategory": "Secure Networking",
-      "tags": ["migration", "config conversion", "policy migration", "third-party"],
-      "deploymentVariants": ["Windows", "Cloud Service"],
+      "tags": [
+        "migration",
+        "config conversion",
+        "policy migration",
+        "third-party"
+      ],
+      "deploymentVariants": [
+        "Windows",
+        "Cloud Service"
+      ],
       "firmware": {
-        "ga": "7.0.3",
-        "recommended": "7.0.3",
+        "ga": null,
+        "recommended": null,
         "feature": null,
-        "lastChecked": "2026-05-13",
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": "Two variants — Converter Tool (on-prem Windows) and Converter Service (cloud).",
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/management/forticonverter",
@@ -279,7 +363,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       },
       "cloudDocs": {
         "service": "https://docs.fortinet.com/product/forticonverter-service"
@@ -292,14 +377,23 @@
       "category": "Secure Networking",
       "subcategory": "NOC Management",
       "uiCategory": "Secure Networking",
-      "tags": ["licensing", "flex licensing", "point-based", "FortiFlex", "VM", "subscription"],
-      "deploymentVariants": ["Cloud Portal"],
+      "tags": [
+        "licensing",
+        "flex licensing",
+        "point-based",
+        "FortiFlex",
+        "VM",
+        "subscription"
+      ],
+      "deploymentVariants": [
+        "Cloud Portal"
+      ],
       "firmware": null,
       "eol": {
         "status": "active",
         "date": null,
         "notes": "Consumption-based licensing platform, not a discrete product.",
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/fortiflex",
@@ -308,7 +402,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": null,
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -318,14 +413,21 @@
       "category": "Secure Networking",
       "subcategory": "NOC Management",
       "uiCategory": "Secure Networking",
-      "tags": ["managed service", "FMaaS", "outsourced management", "co-managed"],
-      "deploymentVariants": ["Managed Service"],
+      "tags": [
+        "managed service",
+        "FMaaS",
+        "outsourced management",
+        "co-managed"
+      ],
+      "deploymentVariants": [
+        "Managed Service"
+      ],
       "firmware": null,
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/managed-fortigate-service",
@@ -334,7 +436,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": null,
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -344,29 +447,39 @@
       "category": "Secure Networking",
       "subcategory": "LAN Edge",
       "uiCategory": "Secure Networking",
-      "tags": ["switching", "LAN", "PoE", "managed switch", "Security Fabric", "FortiLink"],
-      "deploymentVariants": ["Appliance"],
+      "tags": [
+        "switching",
+        "LAN",
+        "PoE",
+        "managed switch",
+        "Security Fabric",
+        "FortiLink"
+      ],
+      "deploymentVariants": [
+        "Appliance"
+      ],
       "firmware": {
-        "ga": "7.4.4",
-        "recommended": "7.4.3",
-        "feature": "7.6.0",
-        "lastChecked": "2026-05-13",
+        "ga": null,
+        "recommended": null,
+        "feature": null,
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/switching",
         "docs": "https://docs.fortinet.com/product/fortiswitch",
-        "releaseNotes": "https://docs.fortinet.com/document/fortiswitch/7.4.4/fortiswitchos-release-notes",
+        "releaseNotes": null,
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources/Switching"
       }
     },
     {
@@ -376,20 +489,27 @@
       "category": "Secure Networking",
       "subcategory": "LAN Edge",
       "uiCategory": "Secure Networking",
-      "tags": ["switch management", "standalone management", "LAN", "FortiSwitch"],
-      "deploymentVariants": ["VM"],
+      "tags": [
+        "switch management",
+        "standalone management",
+        "LAN",
+        "FortiSwitch"
+      ],
+      "deploymentVariants": [
+        "VM"
+      ],
       "firmware": {
-        "ga": "1.0.1",
-        "recommended": "1.0.1",
+        "ga": null,
+        "recommended": null,
         "feature": null,
-        "lastChecked": "2026-05-13",
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/switching",
@@ -398,7 +518,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources/Switching"
       }
     },
     {
@@ -408,29 +529,41 @@
       "category": "Secure Networking",
       "subcategory": "LAN Edge",
       "uiCategory": "Secure Networking",
-      "tags": ["wireless", "WiFi", "access point", "802.11ax", "Wi-Fi 6", "Wi-Fi 6E", "Security Fabric"],
-      "deploymentVariants": ["Appliance", "Cloud-Managed"],
+      "tags": [
+        "wireless",
+        "WiFi",
+        "access point",
+        "802.11ax",
+        "Wi-Fi 6",
+        "Wi-Fi 6E",
+        "Security Fabric"
+      ],
+      "deploymentVariants": [
+        "Appliance",
+        "Cloud-Managed"
+      ],
       "firmware": {
-        "ga": "7.4.3",
-        "recommended": "7.4.3",
-        "feature": "7.6.0",
-        "lastChecked": "2026-05-13",
+        "ga": null,
+        "recommended": null,
+        "feature": null,
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/wireless",
         "docs": "https://docs.fortinet.com/product/fortiap",
-        "releaseNotes": "https://docs.fortinet.com/document/fortiap/7.4.3/release-notes",
+        "releaseNotes": null,
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources/Wireless"
       }
     },
     {
@@ -440,20 +573,28 @@
       "category": "Secure Networking",
       "subcategory": "LAN Edge",
       "uiCategory": "Secure Networking",
-      "tags": ["wireless", "enterprise WiFi", "high-density", "802.11ax", "Meru"],
-      "deploymentVariants": ["Appliance"],
+      "tags": [
+        "wireless",
+        "enterprise WiFi",
+        "high-density",
+        "802.11ax",
+        "Meru"
+      ],
+      "deploymentVariants": [
+        "Appliance"
+      ],
       "firmware": {
-        "ga": "6.4.6",
-        "recommended": "6.4.6",
+        "ga": null,
+        "recommended": null,
         "feature": null,
-        "lastChecked": "2026-05-13",
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": "Separate firmware track from FortiAP. Roadmap convergence is ongoing.",
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/wireless",
@@ -462,7 +603,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources/Wireless"
       }
     },
     {
@@ -472,14 +614,22 @@
       "category": "Secure Networking",
       "subcategory": "LAN Edge",
       "uiCategory": "Secure Networking",
-      "tags": ["cloud-managed LAN", "switch management", "cloud", "SaaS", "wireless"],
-      "deploymentVariants": ["SaaS"],
+      "tags": [
+        "cloud-managed LAN",
+        "switch management",
+        "cloud",
+        "SaaS",
+        "wireless"
+      ],
+      "deploymentVariants": [
+        "SaaS"
+      ],
       "firmware": null,
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/wireless/fortiedge-cloud",
@@ -488,7 +638,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": null,
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources/Wireless"
       }
     },
     {
@@ -498,20 +649,30 @@
       "category": "Secure Networking",
       "subcategory": "LAN Edge",
       "uiCategory": "Secure Networking",
-      "tags": ["NAC", "network access control", "IoT", "device visibility", "OT", "segmentation"],
-      "deploymentVariants": ["Appliance", "VM"],
+      "tags": [
+        "NAC",
+        "network access control",
+        "IoT",
+        "device visibility",
+        "OT",
+        "segmentation"
+      ],
+      "deploymentVariants": [
+        "Appliance",
+        "VM"
+      ],
       "firmware": {
-        "ga": "7.4.2",
-        "recommended": "7.4.2",
-        "feature": "7.6.0",
-        "lastChecked": "2026-05-13",
+        "ga": null,
+        "recommended": null,
+        "feature": null,
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": "Current NAC product. Legacy FortiNAC remains documented separately for in-flight deployments.",
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/network-access-control",
@@ -520,7 +681,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -530,20 +692,27 @@
       "category": "Secure Networking",
       "subcategory": "LAN Edge",
       "uiCategory": "Legacy / EOL",
-      "tags": ["NAC", "network access control", "legacy"],
-      "deploymentVariants": ["Appliance", "VM"],
+      "tags": [
+        "NAC",
+        "network access control",
+        "legacy"
+      ],
+      "deploymentVariants": [
+        "Appliance",
+        "VM"
+      ],
       "firmware": {
-        "ga": "9.4.5",
-        "recommended": "9.4.5",
+        "ga": null,
+        "recommended": null,
         "feature": null,
-        "lastChecked": "2026-05-13",
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "legacy",
         "date": null,
         "notes": "Legacy line. Migration path is FortiNAC-F.",
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/network-access-control",
@@ -552,7 +721,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -562,14 +732,21 @@
       "category": "Secure Networking",
       "subcategory": "LAN Edge",
       "uiCategory": "Secure Networking",
-      "tags": ["cloud-managed LAN", "SaaS", "switching", "wireless"],
-      "deploymentVariants": ["SaaS"],
+      "tags": [
+        "cloud-managed LAN",
+        "SaaS",
+        "switching",
+        "wireless"
+      ],
+      "deploymentVariants": [
+        "SaaS"
+      ],
       "firmware": null,
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/wireless/fortilan-cloud",
@@ -578,7 +755,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": null,
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources/Wireless"
       }
     },
     {
@@ -588,14 +766,22 @@
       "category": "Secure Networking",
       "subcategory": "LAN Edge",
       "uiCategory": "Secure Networking",
-      "tags": ["location analytics", "Wi-Fi analytics", "guest analytics", "presence"],
-      "deploymentVariants": ["SaaS", "VM"],
+      "tags": [
+        "location analytics",
+        "Wi-Fi analytics",
+        "guest analytics",
+        "presence"
+      ],
+      "deploymentVariants": [
+        "SaaS",
+        "VM"
+      ],
       "firmware": null,
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/wireless/fortipresence",
@@ -604,7 +790,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": null,
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources/Wireless"
       }
     },
     {
@@ -614,20 +801,29 @@
       "category": "Secure Networking",
       "subcategory": "WAN / SD-WAN",
       "uiCategory": "Secure Networking",
-      "tags": ["LTE", "5G", "WAN", "cellular", "backhaul", "SD-WAN"],
-      "deploymentVariants": ["Appliance"],
+      "tags": [
+        "LTE",
+        "5G",
+        "WAN",
+        "cellular",
+        "backhaul",
+        "SD-WAN"
+      ],
+      "deploymentVariants": [
+        "Appliance"
+      ],
       "firmware": {
-        "ga": "7.4.3",
-        "recommended": "7.4.3",
-        "feature": "7.6.0",
-        "lastChecked": "2026-05-13",
+        "ga": null,
+        "recommended": null,
+        "feature": null,
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/lte-wireless-wan-extender",
@@ -636,7 +832,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources/SD-WAN"
       }
     },
     {
@@ -646,20 +843,27 @@
       "category": "Secure Networking",
       "subcategory": "WAN / SD-WAN",
       "uiCategory": "Legacy / EOL",
-      "tags": ["WAN optimization", "legacy", "SD-WAN predecessor"],
-      "deploymentVariants": ["Appliance", "VM"],
+      "tags": [
+        "WAN optimization",
+        "legacy",
+        "SD-WAN predecessor"
+      ],
+      "deploymentVariants": [
+        "Appliance",
+        "VM"
+      ],
       "firmware": {
-        "ga": "4.5.8",
-        "recommended": "4.5.8",
+        "ga": null,
+        "recommended": null,
         "feature": null,
-        "lastChecked": "2026-05-13",
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "legacy",
         "date": null,
         "notes": "Migration path is FortiGate SD-WAN.",
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": null,
@@ -668,7 +872,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -678,20 +883,29 @@
       "category": "Secure Networking",
       "subcategory": "Communication & Surveillance",
       "uiCategory": "Voice & Surveillance",
-      "tags": ["UCaaS", "VoIP", "telephony", "PBX", "enterprise voice"],
-      "deploymentVariants": ["Appliance", "VM"],
+      "tags": [
+        "UCaaS",
+        "VoIP",
+        "telephony",
+        "PBX",
+        "enterprise voice"
+      ],
+      "deploymentVariants": [
+        "Appliance",
+        "VM"
+      ],
       "firmware": {
-        "ga": "7.0.4",
-        "recommended": "7.0.4",
+        "ga": null,
+        "recommended": null,
         "feature": null,
-        "lastChecked": "2026-05-13",
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/business-communications/fortivoice",
@@ -700,7 +914,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -710,20 +925,28 @@
       "category": "Secure Networking",
       "subcategory": "Communication & Surveillance",
       "uiCategory": "Voice & Surveillance",
-      "tags": ["IP phone", "desk phone", "VoIP endpoint", "FortiVoice"],
-      "deploymentVariants": ["Appliance", "Softphone"],
+      "tags": [
+        "IP phone",
+        "desk phone",
+        "VoIP endpoint",
+        "FortiVoice"
+      ],
+      "deploymentVariants": [
+        "Appliance",
+        "Softphone"
+      ],
       "firmware": {
-        "ga": "21.0.4",
-        "recommended": "21.0.4",
+        "ga": null,
+        "recommended": null,
         "feature": null,
-        "lastChecked": "2026-05-13",
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/business-communications/fortivoice",
@@ -732,7 +955,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -742,20 +966,27 @@
       "category": "Secure Networking",
       "subcategory": "Communication & Surveillance",
       "uiCategory": "Voice & Surveillance",
-      "tags": ["IP camera", "surveillance", "physical security", "video"],
-      "deploymentVariants": ["Appliance"],
+      "tags": [
+        "IP camera",
+        "surveillance",
+        "physical security",
+        "video"
+      ],
+      "deploymentVariants": [
+        "Appliance"
+      ],
       "firmware": {
-        "ga": "2.2.0",
-        "recommended": "2.2.0",
+        "ga": null,
+        "recommended": null,
         "feature": null,
-        "lastChecked": "2026-05-13",
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/forticamera",
@@ -764,7 +995,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -774,20 +1006,27 @@
       "category": "Secure Networking",
       "subcategory": "Communication & Surveillance",
       "uiCategory": "Voice & Surveillance",
-      "tags": ["NVR", "video recorder", "surveillance", "physical security"],
-      "deploymentVariants": ["Appliance"],
+      "tags": [
+        "NVR",
+        "video recorder",
+        "surveillance",
+        "physical security"
+      ],
+      "deploymentVariants": [
+        "Appliance"
+      ],
       "firmware": {
-        "ga": "6.4.4",
-        "recommended": "6.4.4",
+        "ga": null,
+        "recommended": null,
         "feature": null,
-        "lastChecked": "2026-05-13",
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/fortirecorder",
@@ -796,7 +1035,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -806,20 +1046,28 @@
       "category": "Secure Networking",
       "subcategory": "Communication & Surveillance",
       "uiCategory": "Voice & Surveillance",
-      "tags": ["video management", "VMS", "surveillance management", "camera"],
-      "deploymentVariants": ["Windows", "Mobile"],
+      "tags": [
+        "video management",
+        "VMS",
+        "surveillance management",
+        "camera"
+      ],
+      "deploymentVariants": [
+        "Windows",
+        "Mobile"
+      ],
       "firmware": {
-        "ga": "3.2.0",
-        "recommended": "3.2.0",
+        "ga": null,
+        "recommended": null,
         "feature": null,
-        "lastChecked": "2026-05-13",
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/fortirecorder",
@@ -828,7 +1076,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -838,20 +1087,32 @@
       "category": "Secure Networking",
       "subcategory": "Utilities / Accessories",
       "uiCategory": "Secure Networking",
-      "tags": ["mobile management", "iOS", "Android", "zero-touch provisioning", "macOS", "Windows"],
-      "deploymentVariants": ["iOS", "Android", "Windows", "macOS"],
+      "tags": [
+        "mobile management",
+        "iOS",
+        "Android",
+        "zero-touch provisioning",
+        "macOS",
+        "Windows"
+      ],
+      "deploymentVariants": [
+        "iOS",
+        "Android",
+        "Windows",
+        "macOS"
+      ],
       "firmware": {
-        "ga": "7.2.0",
-        "recommended": "7.2.0",
+        "ga": null,
+        "recommended": null,
         "feature": null,
-        "lastChecked": "2026-05-13",
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": "FortiExplorer Go is the lightweight iOS provisioning variant.",
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": null,
@@ -860,7 +1121,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": null,
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -870,14 +1132,21 @@
       "category": "Secure Networking",
       "subcategory": "Utilities / Accessories",
       "uiCategory": "Secure Networking",
-      "tags": ["zero touch provisioning", "ZTP", "cloud provisioning", "deployment"],
-      "deploymentVariants": ["SaaS"],
+      "tags": [
+        "zero touch provisioning",
+        "ZTP",
+        "cloud provisioning",
+        "deployment"
+      ],
+      "deploymentVariants": [
+        "SaaS"
+      ],
       "firmware": null,
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": null,
@@ -886,7 +1155,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": null,
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -896,14 +1166,20 @@
       "category": "Secure Networking",
       "subcategory": "Utilities / Accessories",
       "uiCategory": "Secure Networking",
-      "tags": ["redundant power supply", "hardware accessory", "RPS"],
-      "deploymentVariants": ["Appliance"],
+      "tags": [
+        "redundant power supply",
+        "hardware accessory",
+        "RPS"
+      ],
+      "deploymentVariants": [
+        "Appliance"
+      ],
       "firmware": null,
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": null,
@@ -912,7 +1188,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": null,
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -922,20 +1199,27 @@
       "category": "Secure Networking",
       "subcategory": "Utilities / Accessories",
       "uiCategory": "Secure Networking",
-      "tags": ["IP address management", "IPAM", "DDI"],
-      "deploymentVariants": ["VM", "SaaS"],
+      "tags": [
+        "IP address management",
+        "IPAM",
+        "DDI"
+      ],
+      "deploymentVariants": [
+        "VM",
+        "SaaS"
+      ],
       "firmware": {
-        "ga": "1.3.0",
-        "recommended": "1.3.0",
+        "ga": null,
+        "recommended": null,
         "feature": null,
-        "lastChecked": "2026-05-13",
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": null,
@@ -944,7 +1228,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -954,20 +1239,28 @@
       "category": "Secure Networking",
       "subcategory": "Utilities / Accessories",
       "uiCategory": "Secure Networking",
-      "tags": ["DNS", "DDI", "DNS security", "DNSSEC"],
-      "deploymentVariants": ["Appliance", "VM"],
+      "tags": [
+        "DNS",
+        "DDI",
+        "DNS security",
+        "DNSSEC"
+      ],
+      "deploymentVariants": [
+        "Appliance",
+        "VM"
+      ],
       "firmware": {
-        "ga": "1.4.0",
-        "recommended": "1.4.0",
+        "ga": null,
+        "recommended": null,
         "feature": null,
-        "lastChecked": "2026-05-13",
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": null,
@@ -976,7 +1269,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -986,20 +1280,27 @@
       "category": "Secure Networking",
       "subcategory": "Utilities / Accessories",
       "uiCategory": "Secure Networking",
-      "tags": ["wireless planning", "site survey", "capacity planning", "RF planning"],
-      "deploymentVariants": ["Windows"],
+      "tags": [
+        "wireless planning",
+        "site survey",
+        "capacity planning",
+        "RF planning"
+      ],
+      "deploymentVariants": [
+        "Windows"
+      ],
       "firmware": {
-        "ga": "3.0.0",
-        "recommended": "3.0.0",
+        "ga": null,
+        "recommended": null,
         "feature": null,
-        "lastChecked": "2026-05-13",
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": null,
@@ -1008,7 +1309,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources/Wireless"
       }
     },
     {
@@ -1018,14 +1320,25 @@
       "category": "Unified SASE",
       "subcategory": "Single-Vendor SASE",
       "uiCategory": "Unified SASE",
-      "tags": ["SASE", "secure internet access", "ZTNA", "SWG", "cloud-delivered", "remote work", "CASB", "FWaaS"],
-      "deploymentVariants": ["SaaS"],
+      "tags": [
+        "SASE",
+        "secure internet access",
+        "ZTNA",
+        "SWG",
+        "cloud-delivered",
+        "remote work",
+        "CASB",
+        "FWaaS"
+      ],
+      "deploymentVariants": [
+        "SaaS"
+      ],
       "firmware": null,
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/sase",
@@ -1034,7 +1347,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": null,
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources/SASE"
       }
     },
     {
@@ -1044,14 +1358,23 @@
       "category": "Unified SASE",
       "subcategory": "Single-Vendor SASE",
       "uiCategory": "Unified SASE",
-      "tags": ["SASE", "sovereign", "data residency", "government", "regulated"],
-      "deploymentVariants": ["Private Cloud", "Public Cloud"],
+      "tags": [
+        "SASE",
+        "sovereign",
+        "data residency",
+        "government",
+        "regulated"
+      ],
+      "deploymentVariants": [
+        "Private Cloud",
+        "Public Cloud"
+      ],
       "firmware": null,
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/sase",
@@ -1060,7 +1383,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": null,
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources/SASE"
       }
     },
     {
@@ -1070,14 +1394,22 @@
       "category": "Unified SASE",
       "subcategory": "Single-Vendor SASE",
       "uiCategory": "Unified SASE",
-      "tags": ["SASE", "branch", "thin edge", "SD-WAN", "LAN edge integration"],
-      "deploymentVariants": ["SaaS"],
+      "tags": [
+        "SASE",
+        "branch",
+        "thin edge",
+        "SD-WAN",
+        "LAN edge integration"
+      ],
+      "deploymentVariants": [
+        "SaaS"
+      ],
       "firmware": null,
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/sase",
@@ -1086,7 +1418,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": null,
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources/SASE"
       }
     },
     {
@@ -1096,20 +1429,31 @@
       "category": "Unified SASE",
       "subcategory": "Single-Vendor SASE",
       "uiCategory": "Unified SASE",
-      "tags": ["web proxy", "DNS proxy", "SWG", "explicit proxy", "CASB", "ZTNA"],
-      "deploymentVariants": ["Appliance", "VM", "Public Cloud"],
+      "tags": [
+        "web proxy",
+        "DNS proxy",
+        "SWG",
+        "explicit proxy",
+        "CASB",
+        "ZTNA"
+      ],
+      "deploymentVariants": [
+        "Appliance",
+        "VM",
+        "Public Cloud"
+      ],
       "firmware": {
-        "ga": "7.4.4",
-        "recommended": "7.4.4",
-        "feature": "7.6.0",
-        "lastChecked": "2026-05-13",
+        "ga": null,
+        "recommended": null,
+        "feature": null,
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/secure-web-gateway-fortiproxy",
@@ -1118,7 +1462,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources/SASE"
       }
     },
     {
@@ -1128,14 +1473,22 @@
       "category": "Unified SASE",
       "subcategory": "Single-Vendor SASE",
       "uiCategory": "Unified SASE",
-      "tags": ["network monitoring", "NPM", "performance monitoring", "SD-WAN", "DEM"],
-      "deploymentVariants": ["SaaS"],
+      "tags": [
+        "network monitoring",
+        "NPM",
+        "performance monitoring",
+        "SD-WAN",
+        "DEM"
+      ],
+      "deploymentVariants": [
+        "SaaS"
+      ],
       "firmware": null,
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/fortimonitor",
@@ -1144,7 +1497,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": null,
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -1154,14 +1508,26 @@
       "category": "Unified SASE",
       "subcategory": "Cloud-Native Security",
       "uiCategory": "Cloud & DevSecOps",
-      "tags": ["CNAPP", "cloud native", "runtime security", "CSPM", "CWPP", "vulnerability", "AWS", "Azure", "GCP"],
-      "deploymentVariants": ["SaaS"],
+      "tags": [
+        "CNAPP",
+        "cloud native",
+        "runtime security",
+        "CSPM",
+        "CWPP",
+        "vulnerability",
+        "AWS",
+        "Azure",
+        "GCP"
+      ],
+      "deploymentVariants": [
+        "SaaS"
+      ],
       "firmware": null,
       "eol": {
         "status": "active",
         "date": null,
         "notes": "From the Lacework acquisition. Full CNAPP suite; consolidates FortiCNP and FortiCWP capabilities.",
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/lacework-forticnapp",
@@ -1170,7 +1536,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": null,
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -1180,14 +1547,25 @@
       "category": "Unified SASE",
       "subcategory": "Cloud-Native Security",
       "uiCategory": "Cloud & DevSecOps",
-      "tags": ["DevSecOps", "SAST", "DAST", "pipeline security", "CI/CD", "IaC scanning", "SCA", "secrets"],
-      "deploymentVariants": ["SaaS"],
+      "tags": [
+        "DevSecOps",
+        "SAST",
+        "DAST",
+        "pipeline security",
+        "CI/CD",
+        "IaC scanning",
+        "SCA",
+        "secrets"
+      ],
+      "deploymentVariants": [
+        "SaaS"
+      ],
       "firmware": null,
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/fortidevsec",
@@ -1196,7 +1574,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": null,
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -1206,14 +1585,22 @@
       "category": "Unified SASE",
       "subcategory": "Cloud-Native Security",
       "uiCategory": "Cloud & DevSecOps",
-      "tags": ["DAST", "dynamic application security testing", "API scanning", "web app", "OWASP"],
-      "deploymentVariants": ["SaaS"],
+      "tags": [
+        "DAST",
+        "dynamic application security testing",
+        "API scanning",
+        "web app",
+        "OWASP"
+      ],
+      "deploymentVariants": [
+        "SaaS"
+      ],
       "firmware": null,
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/fortidast",
@@ -1222,7 +1609,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": null,
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -1232,14 +1620,21 @@
       "category": "Unified SASE",
       "subcategory": "Cloud-Native Security",
       "uiCategory": "Cloud & DevSecOps",
-      "tags": ["cloud native protection", "cloud security posture", "AWS", "CSPM"],
-      "deploymentVariants": ["SaaS"],
+      "tags": [
+        "cloud native protection",
+        "cloud security posture",
+        "AWS",
+        "CSPM"
+      ],
+      "deploymentVariants": [
+        "SaaS"
+      ],
       "firmware": null,
       "eol": {
         "status": "legacy",
         "date": null,
         "notes": "Migration path is Lacework FortiCNAPP.",
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": null,
@@ -1248,7 +1643,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": null,
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -1258,14 +1654,20 @@
       "category": "Unified SASE",
       "subcategory": "Cloud-Native Security",
       "uiCategory": "Cloud & DevSecOps",
-      "tags": ["cloud workload protection", "CWPP", "legacy"],
-      "deploymentVariants": ["SaaS"],
+      "tags": [
+        "cloud workload protection",
+        "CWPP",
+        "legacy"
+      ],
+      "deploymentVariants": [
+        "SaaS"
+      ],
       "firmware": null,
       "eol": {
         "status": "legacy",
         "date": null,
         "notes": "Migration path is Lacework FortiCNAPP.",
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": null,
@@ -1274,7 +1676,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": null,
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -1284,14 +1687,21 @@
       "category": "Unified SASE",
       "subcategory": "Cloud-Native Security",
       "uiCategory": "Cloud & DevSecOps",
-      "tags": ["CASB", "cloud access security broker", "SaaS visibility", "shadow IT"],
-      "deploymentVariants": ["SaaS"],
+      "tags": [
+        "CASB",
+        "cloud access security broker",
+        "SaaS visibility",
+        "shadow IT"
+      ],
+      "deploymentVariants": [
+        "SaaS"
+      ],
       "firmware": null,
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/casb",
@@ -1300,7 +1710,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": null,
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -1310,14 +1721,22 @@
       "category": "Unified SASE",
       "subcategory": "Cloud-Native Security",
       "uiCategory": "Cloud & DevSecOps",
-      "tags": ["WAF", "API security", "SaaS", "web application firewall", "bot management"],
-      "deploymentVariants": ["SaaS"],
+      "tags": [
+        "WAF",
+        "API security",
+        "SaaS",
+        "web application firewall",
+        "bot management"
+      ],
+      "deploymentVariants": [
+        "SaaS"
+      ],
       "firmware": null,
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/fortiappsec-cloud",
@@ -1326,7 +1745,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": null,
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources/WAF"
       }
     },
     {
@@ -1336,20 +1756,35 @@
       "category": "Unified SASE",
       "subcategory": "Client Connectivity",
       "uiCategory": "Endpoint & EDR",
-      "tags": ["endpoint", "VPN", "ZTNA", "EDR", "EMS", "SSL VPN", "IPsec", "zero trust"],
-      "deploymentVariants": ["Windows", "macOS", "Linux", "iOS", "Android"],
+      "tags": [
+        "endpoint",
+        "VPN",
+        "ZTNA",
+        "EDR",
+        "EMS",
+        "SSL VPN",
+        "IPsec",
+        "zero trust"
+      ],
+      "deploymentVariants": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android"
+      ],
       "firmware": {
-        "ga": "7.4.3",
-        "recommended": "7.4.2",
-        "feature": "7.6.0",
-        "lastChecked": "2026-05-13",
+        "ga": null,
+        "recommended": null,
+        "feature": null,
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": "Agent component. Managed by FortiClient EMS (on-prem) or FortiClient Cloud (SaaS).",
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/endpoint-security/forticlient",
@@ -1358,7 +1793,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources/ZTNA"
       }
     },
     {
@@ -1368,14 +1804,20 @@
       "category": "Unified SASE",
       "subcategory": "Client Connectivity",
       "uiCategory": "Endpoint & EDR",
-      "tags": ["EMS", "cloud-managed", "endpoint management"],
-      "deploymentVariants": ["SaaS"],
+      "tags": [
+        "EMS",
+        "cloud-managed",
+        "endpoint management"
+      ],
+      "deploymentVariants": [
+        "SaaS"
+      ],
       "firmware": null,
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/endpoint-security/forticlient",
@@ -1384,7 +1826,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": null,
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources/ZTNA"
       }
     },
     {
@@ -1394,20 +1837,32 @@
       "category": "Unified SASE",
       "subcategory": "Application Delivery",
       "uiCategory": "Cloud & DevSecOps",
-      "tags": ["WAF", "web application firewall", "API security", "bot defense", "OWASP"],
-      "deploymentVariants": ["Appliance", "VM", "Public Cloud", "Container", "SaaS"],
+      "tags": [
+        "WAF",
+        "web application firewall",
+        "API security",
+        "bot defense",
+        "OWASP"
+      ],
+      "deploymentVariants": [
+        "Appliance",
+        "VM",
+        "Public Cloud",
+        "Container",
+        "SaaS"
+      ],
       "firmware": {
-        "ga": "7.4.4",
-        "recommended": "7.4.3",
-        "feature": "7.6.0",
-        "lastChecked": "2026-05-13",
+        "ga": null,
+        "recommended": null,
+        "feature": null,
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/web-application-firewall/fortiweb",
@@ -1416,7 +1871,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources/WAF"
       }
     },
     {
@@ -1426,20 +1882,30 @@
       "category": "Unified SASE",
       "subcategory": "Application Delivery",
       "uiCategory": "Secure Networking",
-      "tags": ["ADC", "load balancer", "application delivery", "SSL offload", "GSLB"],
-      "deploymentVariants": ["Appliance", "VM", "Public Cloud"],
+      "tags": [
+        "ADC",
+        "load balancer",
+        "application delivery",
+        "SSL offload",
+        "GSLB"
+      ],
+      "deploymentVariants": [
+        "Appliance",
+        "VM",
+        "Public Cloud"
+      ],
       "firmware": {
-        "ga": "7.4.4",
-        "recommended": "7.4.3",
-        "feature": "7.6.0",
-        "lastChecked": "2026-05-13",
+        "ga": null,
+        "recommended": null,
+        "feature": null,
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/application-delivery-controller",
@@ -1448,7 +1914,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources/ADC"
       }
     },
     {
@@ -1458,14 +1925,21 @@
       "category": "Unified SASE",
       "subcategory": "Application Delivery",
       "uiCategory": "Secure Networking",
-      "tags": ["GSLB", "global server load balancing", "DNS load balancing", "SaaS"],
-      "deploymentVariants": ["SaaS"],
+      "tags": [
+        "GSLB",
+        "global server load balancing",
+        "DNS load balancing",
+        "SaaS"
+      ],
+      "deploymentVariants": [
+        "SaaS"
+      ],
       "firmware": null,
       "eol": {
         "status": "active",
         "date": null,
         "notes": "FortiGSLB is the SaaS version of FortiADC load balancing.",
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/application-delivery-controller",
@@ -1474,7 +1948,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": null,
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources/ADC"
       }
     },
     {
@@ -1484,29 +1959,42 @@
       "category": "Security Operations",
       "subcategory": "Analytics & Automation",
       "uiCategory": "Security Operations",
-      "tags": ["log management", "analytics", "reporting", "NOC", "SOC", "FortiView"],
-      "deploymentVariants": ["Appliance", "VM", "Public Cloud", "Private Cloud"],
+      "tags": [
+        "log management",
+        "analytics",
+        "reporting",
+        "NOC",
+        "SOC",
+        "FortiView"
+      ],
+      "deploymentVariants": [
+        "Appliance",
+        "VM",
+        "Public Cloud",
+        "Private Cloud"
+      ],
       "firmware": {
-        "ga": "7.4.4",
-        "recommended": "7.4.3",
-        "feature": "7.6.0",
-        "lastChecked": "2026-05-13",
+        "ga": null,
+        "recommended": null,
+        "feature": null,
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/management/fortianalyzer",
         "docs": "https://docs.fortinet.com/product/fortianalyzer",
-        "releaseNotes": "https://docs.fortinet.com/document/fortianalyzer/7.4.4/release-notes",
-        "adminGuide": "https://docs.fortinet.com/document/fortianalyzer/7.4.0/administration-guide",
+        "releaseNotes": null,
+        "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -1516,20 +2004,28 @@
       "category": "Security Operations",
       "subcategory": "Analytics & Automation",
       "uiCategory": "Security Operations",
-      "tags": ["big data", "high-volume logs", "analytics", "scale", "Hadoop"],
-      "deploymentVariants": ["Appliance"],
+      "tags": [
+        "big data",
+        "high-volume logs",
+        "analytics",
+        "scale",
+        "Hadoop"
+      ],
+      "deploymentVariants": [
+        "Appliance"
+      ],
       "firmware": {
-        "ga": "7.4.0",
-        "recommended": "7.4.0",
+        "ga": null,
+        "recommended": null,
         "feature": null,
-        "lastChecked": "2026-05-13",
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/management/fortianalyzer",
@@ -1538,7 +2034,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -1548,20 +2045,30 @@
       "category": "Security Operations",
       "subcategory": "Analytics & Automation",
       "uiCategory": "Security Operations",
-      "tags": ["SIEM", "event correlation", "threat detection", "UEBA", "compliance"],
-      "deploymentVariants": ["Appliance", "VM", "Public Cloud"],
+      "tags": [
+        "SIEM",
+        "event correlation",
+        "threat detection",
+        "UEBA",
+        "compliance"
+      ],
+      "deploymentVariants": [
+        "Appliance",
+        "VM",
+        "Public Cloud"
+      ],
       "firmware": {
-        "ga": "7.2.4",
-        "recommended": "7.2.4",
-        "feature": "7.3.0",
-        "lastChecked": "2026-05-13",
+        "ga": null,
+        "recommended": null,
+        "feature": null,
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/siem/fortisiem",
@@ -1570,7 +2077,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -1580,20 +2088,31 @@
       "category": "Security Operations",
       "subcategory": "Analytics & Automation",
       "uiCategory": "Security Operations",
-      "tags": ["SOAR", "orchestration", "automation", "playbooks", "incident response", "SOC"],
-      "deploymentVariants": ["VM", "Public Cloud", "SaaS"],
+      "tags": [
+        "SOAR",
+        "orchestration",
+        "automation",
+        "playbooks",
+        "incident response",
+        "SOC"
+      ],
+      "deploymentVariants": [
+        "VM",
+        "Public Cloud",
+        "SaaS"
+      ],
       "firmware": {
-        "ga": "7.4.3",
-        "recommended": "7.4.3",
-        "feature": "7.6.0",
-        "lastChecked": "2026-05-13",
+        "ga": null,
+        "recommended": null,
+        "feature": null,
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": "Available as on-prem VM and as FortiSOAR Cloud (SaaS).",
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/fortisoar",
@@ -1602,7 +2121,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -1612,14 +2132,22 @@
       "category": "Security Operations",
       "subcategory": "Analytics & Automation",
       "uiCategory": "Security Operations",
-      "tags": ["managed SOC", "MDR", "managed detection response", "FortiGuard", "SOCaaS"],
-      "deploymentVariants": ["Managed Service"],
+      "tags": [
+        "managed SOC",
+        "MDR",
+        "managed detection response",
+        "FortiGuard",
+        "SOCaaS"
+      ],
+      "deploymentVariants": [
+        "Managed Service"
+      ],
       "firmware": null,
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/socaas",
@@ -1628,7 +2156,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": null,
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -1638,14 +2167,22 @@
       "category": "Security Operations",
       "subcategory": "Analytics & Automation",
       "uiCategory": "Security Operations",
-      "tags": ["threat intelligence", "TIP", "IOC", "threat feeds", "FortiGuard"],
-      "deploymentVariants": ["SaaS"],
+      "tags": [
+        "threat intelligence",
+        "TIP",
+        "IOC",
+        "threat feeds",
+        "FortiGuard"
+      ],
+      "deploymentVariants": [
+        "SaaS"
+      ],
       "firmware": null,
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/fortitip",
@@ -1654,7 +2191,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": null,
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -1664,20 +2202,30 @@
       "category": "Security Operations",
       "subcategory": "Endpoint Security",
       "uiCategory": "Endpoint & EDR",
-      "tags": ["EDR", "XDR", "endpoint detection", "response", "ransomware", "breach prevention"],
-      "deploymentVariants": ["SaaS", "Hybrid"],
+      "tags": [
+        "EDR",
+        "XDR",
+        "endpoint detection",
+        "response",
+        "ransomware",
+        "breach prevention"
+      ],
+      "deploymentVariants": [
+        "SaaS",
+        "Hybrid"
+      ],
       "firmware": {
-        "ga": "6.2.0",
-        "recommended": "6.2.0",
-        "feature": "6.3.0",
-        "lastChecked": "2026-05-13",
+        "ga": null,
+        "recommended": null,
+        "feature": null,
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": "FortiXDR is the cross-domain correlation overlay on FortiEDR telemetry.",
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/endpoint-security/fortiedr",
@@ -1686,7 +2234,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -1696,14 +2245,20 @@
       "category": "Security Operations",
       "subcategory": "Endpoint Security",
       "uiCategory": "Endpoint & EDR",
-      "tags": ["endpoint management", "device management", "EPP"],
-      "deploymentVariants": ["SaaS"],
+      "tags": [
+        "endpoint management",
+        "device management",
+        "EPP"
+      ],
+      "deploymentVariants": [
+        "SaaS"
+      ],
       "firmware": null,
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/fortiendpoint",
@@ -1712,7 +2267,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": null,
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -1722,20 +2278,28 @@
       "category": "Security Operations",
       "subcategory": "Endpoint Security",
       "uiCategory": "Security Operations",
-      "tags": ["UEBA", "insider threat", "user behavior analytics", "DLP"],
-      "deploymentVariants": ["Appliance", "VM"],
+      "tags": [
+        "UEBA",
+        "insider threat",
+        "user behavior analytics",
+        "DLP"
+      ],
+      "deploymentVariants": [
+        "Appliance",
+        "VM"
+      ],
       "firmware": {
-        "ga": "7.1.1",
-        "recommended": "7.1.1",
+        "ga": null,
+        "recommended": null,
         "feature": null,
-        "lastChecked": "2026-05-13",
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/fortiinsight",
@@ -1744,7 +2308,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -1754,14 +2319,22 @@
       "category": "Security Operations",
       "subcategory": "Data Protection",
       "uiCategory": "Email & Data Protection",
-      "tags": ["DLP", "data loss prevention", "data protection", "exfiltration"],
-      "deploymentVariants": ["SaaS", "Agent"],
+      "tags": [
+        "DLP",
+        "data loss prevention",
+        "data protection",
+        "exfiltration"
+      ],
+      "deploymentVariants": [
+        "SaaS",
+        "Agent"
+      ],
       "firmware": null,
       "eol": {
         "status": "active",
         "date": null,
         "notes": "Three doc entries on docs.fortinet.com: FortiDLP, FortiDLP Agent, FortiDLP Policies.",
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/fortidlp",
@@ -1770,7 +2343,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": null,
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -1780,20 +2354,33 @@
       "category": "Security Operations",
       "subcategory": "Identity & Access",
       "uiCategory": "Identity & Access",
-      "tags": ["MFA", "identity", "RADIUS", "LDAP", "SAML", "SSO", "certificates", "PKI"],
-      "deploymentVariants": ["Appliance", "VM", "Public Cloud"],
+      "tags": [
+        "MFA",
+        "identity",
+        "RADIUS",
+        "LDAP",
+        "SAML",
+        "SSO",
+        "certificates",
+        "PKI"
+      ],
+      "deploymentVariants": [
+        "Appliance",
+        "VM",
+        "Public Cloud"
+      ],
       "firmware": {
-        "ga": "6.6.2",
-        "recommended": "6.6.2",
-        "feature": "6.7.0",
-        "lastChecked": "2026-05-13",
+        "ga": null,
+        "recommended": null,
+        "feature": null,
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/identity-access-management/fortiauthenticator",
@@ -1802,7 +2389,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources/IAM"
       }
     },
     {
@@ -1812,14 +2400,21 @@
       "category": "Security Operations",
       "subcategory": "Identity & Access",
       "uiCategory": "Identity & Access",
-      "tags": ["MFA", "identity", "cloud", "SaaS"],
-      "deploymentVariants": ["SaaS"],
+      "tags": [
+        "MFA",
+        "identity",
+        "cloud",
+        "SaaS"
+      ],
+      "deploymentVariants": [
+        "SaaS"
+      ],
       "firmware": null,
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/identity-access-management/fortiauthenticator",
@@ -1828,7 +2423,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": null,
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources/IAM"
       }
     },
     {
@@ -1838,20 +2434,31 @@
       "category": "Security Operations",
       "subcategory": "Identity & Access",
       "uiCategory": "Identity & Access",
-      "tags": ["OTP", "hardware token", "mobile token", "MFA", "TOTP", "push"],
-      "deploymentVariants": ["Hardware", "iOS", "Android"],
+      "tags": [
+        "OTP",
+        "hardware token",
+        "mobile token",
+        "MFA",
+        "TOTP",
+        "push"
+      ],
+      "deploymentVariants": [
+        "Hardware",
+        "iOS",
+        "Android"
+      ],
       "firmware": {
-        "ga": "5.5.0",
-        "recommended": "5.5.0",
+        "ga": null,
+        "recommended": null,
         "feature": null,
-        "lastChecked": "2026-05-13",
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/identity-access-management/fortitoken",
@@ -1860,7 +2467,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources/IAM"
       }
     },
     {
@@ -1870,14 +2478,23 @@
       "category": "Security Operations",
       "subcategory": "Identity & Access",
       "uiCategory": "Identity & Access",
-      "tags": ["identity", "MFA", "SaaS", "cloud identity", "IDaaS", "SSO"],
-      "deploymentVariants": ["SaaS"],
+      "tags": [
+        "identity",
+        "MFA",
+        "SaaS",
+        "cloud identity",
+        "IDaaS",
+        "SSO"
+      ],
+      "deploymentVariants": [
+        "SaaS"
+      ],
       "firmware": null,
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/fortiidentity",
@@ -1886,7 +2503,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": null,
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources/IAM"
       }
     },
     {
@@ -1896,20 +2514,29 @@
       "category": "Security Operations",
       "subcategory": "Identity & Access",
       "uiCategory": "Identity & Access",
-      "tags": ["PAM", "privileged access", "privileged accounts", "credential vaulting", "session recording"],
-      "deploymentVariants": ["VM", "Appliance"],
+      "tags": [
+        "PAM",
+        "privileged access",
+        "privileged accounts",
+        "credential vaulting",
+        "session recording"
+      ],
+      "deploymentVariants": [
+        "VM",
+        "Appliance"
+      ],
       "firmware": {
-        "ga": "1.4.0",
-        "recommended": "1.4.0",
-        "feature": "1.5.0",
-        "lastChecked": "2026-05-13",
+        "ga": null,
+        "recommended": null,
+        "feature": null,
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/fortipam",
@@ -1918,7 +2545,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources/IAM"
       }
     },
     {
@@ -1928,20 +2556,30 @@
       "category": "Security Operations",
       "subcategory": "Email Security",
       "uiCategory": "Email & Data Protection",
-      "tags": ["email security", "secure email gateway", "anti-spam", "anti-phishing", "SEG"],
-      "deploymentVariants": ["Appliance", "VM", "Public Cloud"],
+      "tags": [
+        "email security",
+        "secure email gateway",
+        "anti-spam",
+        "anti-phishing",
+        "SEG"
+      ],
+      "deploymentVariants": [
+        "Appliance",
+        "VM",
+        "Public Cloud"
+      ],
       "firmware": {
-        "ga": "7.4.4",
-        "recommended": "7.4.3",
-        "feature": "7.6.0",
-        "lastChecked": "2026-05-13",
+        "ga": null,
+        "recommended": null,
+        "feature": null,
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/email-security",
@@ -1950,7 +2588,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -1960,14 +2599,20 @@
       "category": "Security Operations",
       "subcategory": "Email Security",
       "uiCategory": "Email & Data Protection",
-      "tags": ["phishing simulation", "security awareness", "anti-phishing training"],
-      "deploymentVariants": ["SaaS"],
+      "tags": [
+        "phishing simulation",
+        "security awareness",
+        "anti-phishing training"
+      ],
+      "deploymentVariants": [
+        "SaaS"
+      ],
       "firmware": null,
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/fortiphish",
@@ -1976,7 +2621,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": null,
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -1986,14 +2632,21 @@
       "category": "Security Operations",
       "subcategory": "Email Security",
       "uiCategory": "Email & Data Protection",
-      "tags": ["security awareness", "training", "phishing simulation", "SAT"],
-      "deploymentVariants": ["SaaS"],
+      "tags": [
+        "security awareness",
+        "training",
+        "phishing simulation",
+        "SAT"
+      ],
+      "deploymentVariants": [
+        "SaaS"
+      ],
       "firmware": null,
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/security-awareness-training",
@@ -2002,7 +2655,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": null,
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -2012,20 +2666,31 @@
       "category": "Security Operations",
       "subcategory": "Early Detection & Prevention",
       "uiCategory": "Early Detection",
-      "tags": ["sandbox", "advanced threat protection", "ATP", "zero-day", "malware analysis"],
-      "deploymentVariants": ["Appliance", "VM", "Public Cloud", "SaaS"],
+      "tags": [
+        "sandbox",
+        "advanced threat protection",
+        "ATP",
+        "zero-day",
+        "malware analysis"
+      ],
+      "deploymentVariants": [
+        "Appliance",
+        "VM",
+        "Public Cloud",
+        "SaaS"
+      ],
       "firmware": {
-        "ga": "4.4.5",
-        "recommended": "4.4.5",
-        "feature": "5.0.0",
-        "lastChecked": "2026-05-13",
+        "ga": null,
+        "recommended": null,
+        "feature": null,
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/sandbox/fortisandbox",
@@ -2034,7 +2699,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -2044,20 +2710,29 @@
       "category": "Security Operations",
       "subcategory": "Early Detection & Prevention",
       "uiCategory": "Early Detection",
-      "tags": ["NDR", "network detection response", "AI", "network traffic analysis", "NTA"],
-      "deploymentVariants": ["Appliance", "VM"],
+      "tags": [
+        "NDR",
+        "network detection response",
+        "AI",
+        "network traffic analysis",
+        "NTA"
+      ],
+      "deploymentVariants": [
+        "Appliance",
+        "VM"
+      ],
       "firmware": {
-        "ga": "7.4.3",
-        "recommended": "7.4.3",
-        "feature": "7.6.0",
-        "lastChecked": "2026-05-13",
+        "ga": null,
+        "recommended": null,
+        "feature": null,
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/fortindr",
@@ -2066,7 +2741,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -2076,14 +2752,22 @@
       "category": "Security Operations",
       "subcategory": "Early Detection & Prevention",
       "uiCategory": "Early Detection",
-      "tags": ["NDR", "cloud", "SaaS", "network detection", "managed"],
-      "deploymentVariants": ["SaaS"],
+      "tags": [
+        "NDR",
+        "cloud",
+        "SaaS",
+        "network detection",
+        "managed"
+      ],
+      "deploymentVariants": [
+        "SaaS"
+      ],
       "firmware": null,
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/fortindr",
@@ -2092,7 +2776,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": null,
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -2102,20 +2787,31 @@
       "category": "Security Operations",
       "subcategory": "Early Detection & Prevention",
       "uiCategory": "Early Detection",
-      "tags": ["deception", "honeypot", "decoy", "DaaS", "OT", "lateral movement detection"],
-      "deploymentVariants": ["Appliance", "VM", "SaaS"],
+      "tags": [
+        "deception",
+        "honeypot",
+        "decoy",
+        "DaaS",
+        "OT",
+        "lateral movement detection"
+      ],
+      "deploymentVariants": [
+        "Appliance",
+        "VM",
+        "SaaS"
+      ],
       "firmware": {
-        "ga": "5.4.0",
-        "recommended": "5.4.0",
-        "feature": "6.0.0",
-        "lastChecked": "2026-05-13",
+        "ga": null,
+        "recommended": null,
+        "feature": null,
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": "Also available as FortiDeceptor DaaS (managed cloud deception).",
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/fortideceptor",
@@ -2124,7 +2820,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       },
       "cloudDocs": {
         "daas": "https://docs.fortinet.com/product/fortideceptor-daas"
@@ -2137,14 +2834,23 @@
       "category": "Security Operations",
       "subcategory": "Early Detection & Prevention",
       "uiCategory": "Early Detection",
-      "tags": ["ASM", "attack surface management", "external risk", "dark web", "EASM", "brand protection"],
-      "deploymentVariants": ["SaaS"],
+      "tags": [
+        "ASM",
+        "attack surface management",
+        "external risk",
+        "dark web",
+        "EASM",
+        "brand protection"
+      ],
+      "deploymentVariants": [
+        "SaaS"
+      ],
       "firmware": null,
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/fortirecon",
@@ -2153,7 +2859,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": null,
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -2163,20 +2870,28 @@
       "category": "Security Operations",
       "subcategory": "Early Detection & Prevention",
       "uiCategory": "Early Detection",
-      "tags": ["browser isolation", "RBI", "remote browser isolation", "zero-day"],
-      "deploymentVariants": ["Appliance", "VM"],
+      "tags": [
+        "browser isolation",
+        "RBI",
+        "remote browser isolation",
+        "zero-day"
+      ],
+      "deploymentVariants": [
+        "Appliance",
+        "VM"
+      ],
       "firmware": {
-        "ga": "2.4.0",
-        "recommended": "2.4.0",
+        "ga": null,
+        "recommended": null,
         "feature": null,
-        "lastChecked": "2026-05-13",
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/fortiisolator",
@@ -2185,7 +2900,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -2195,20 +2911,27 @@
       "category": "Security Operations",
       "subcategory": "Policy & Compliance",
       "uiCategory": "Security Operations",
-      "tags": ["policy automation", "security policy", "compliance", "firewall policy"],
-      "deploymentVariants": ["VM"],
+      "tags": [
+        "policy automation",
+        "security policy",
+        "compliance",
+        "firewall policy"
+      ],
+      "deploymentVariants": [
+        "VM"
+      ],
       "firmware": {
-        "ga": "23.4.0",
-        "recommended": "23.4.0",
+        "ga": null,
+        "recommended": null,
         "feature": null,
-        "lastChecked": "2026-05-13",
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/fortipolicy",
@@ -2217,7 +2940,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -2227,20 +2951,27 @@
       "category": "Security Operations",
       "subcategory": "Policy & Compliance",
       "uiCategory": "Security Operations",
-      "tags": ["MSSP", "managed service provider", "tenant portal", "multi-tenant"],
-      "deploymentVariants": ["VM"],
+      "tags": [
+        "MSSP",
+        "managed service provider",
+        "tenant portal",
+        "multi-tenant"
+      ],
+      "deploymentVariants": [
+        "VM"
+      ],
       "firmware": {
-        "ga": "7.4.2",
-        "recommended": "7.4.2",
-        "feature": "7.6.0",
-        "lastChecked": "2026-05-13",
+        "ga": null,
+        "recommended": null,
+        "feature": null,
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": "https://www.fortinet.com/products/management/fortiportal",
@@ -2249,7 +2980,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -2259,20 +2991,28 @@
       "category": "Security Operations",
       "subcategory": "Security Testing",
       "uiCategory": "Legacy / EOL",
-      "tags": ["network testing", "performance testing", "security validation", "EOL"],
-      "deploymentVariants": ["Appliance", "VM"],
+      "tags": [
+        "network testing",
+        "performance testing",
+        "security validation",
+        "EOL"
+      ],
+      "deploymentVariants": [
+        "Appliance",
+        "VM"
+      ],
       "firmware": {
-        "ga": "7.2.0",
-        "recommended": "7.2.0",
+        "ga": null,
+        "recommended": null,
         "feature": null,
-        "lastChecked": "2026-05-13",
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "eol",
         "date": null,
         "notes": "EOL — no replacement product from Fortinet.",
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": null,
@@ -2281,7 +3021,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -2291,20 +3032,30 @@
       "category": "Security Operations",
       "subcategory": "Secure Remote Access",
       "uiCategory": "Legacy / EOL",
-      "tags": ["secure remote access", "OT", "ICS", "SCADA", "VPN", "remote maintenance", "EOL"],
-      "deploymentVariants": ["VM"],
+      "tags": [
+        "secure remote access",
+        "OT",
+        "ICS",
+        "SCADA",
+        "VPN",
+        "remote maintenance",
+        "EOL"
+      ],
+      "deploymentVariants": [
+        "VM"
+      ],
       "firmware": {
-        "ga": "1.2.0",
-        "recommended": "1.2.0",
+        "ga": null,
+        "recommended": null,
         "feature": null,
-        "lastChecked": "2026-05-13",
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "eol",
         "date": null,
         "notes": "EOL. Migration paths: FortiClient ZTNA for end-user remote access, FortiPAM for privileged session control.",
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": null,
@@ -2313,7 +3064,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -2323,14 +3075,22 @@
       "category": "Security Operations",
       "subcategory": "Other / Specialized",
       "uiCategory": "Legacy / EOL",
-      "tags": ["database security", "database activity monitoring", "DAM", "legacy"],
-      "deploymentVariants": ["Appliance", "VM"],
+      "tags": [
+        "database security",
+        "database activity monitoring",
+        "DAM",
+        "legacy"
+      ],
+      "deploymentVariants": [
+        "Appliance",
+        "VM"
+      ],
       "firmware": null,
       "eol": {
         "status": "legacy",
         "date": null,
         "notes": "Legacy database security product. Limited active development.",
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": null,
@@ -2339,7 +3099,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -2349,14 +3110,21 @@
       "category": "Security Operations",
       "subcategory": "Other / Specialized",
       "uiCategory": "Legacy / EOL",
-      "tags": ["web caching", "WAN optimization", "legacy"],
-      "deploymentVariants": ["Appliance", "VM"],
+      "tags": [
+        "web caching",
+        "WAN optimization",
+        "legacy"
+      ],
+      "deploymentVariants": [
+        "Appliance",
+        "VM"
+      ],
       "firmware": null,
       "eol": {
         "status": "legacy",
         "date": null,
         "notes": "Legacy. Caching capability folded into other products.",
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": null,
@@ -2365,7 +3133,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -2375,20 +3144,27 @@
       "category": "Security Operations",
       "subcategory": "Other / Specialized",
       "uiCategory": "Secure Networking",
-      "tags": ["hypervisor", "virtualization", "VM hosting", "VNF"],
-      "deploymentVariants": ["Appliance"],
+      "tags": [
+        "hypervisor",
+        "virtualization",
+        "VM hosting",
+        "VNF"
+      ],
+      "deploymentVariants": [
+        "Appliance"
+      ],
       "firmware": {
-        "ga": "1.2.0",
-        "recommended": "1.2.0",
+        "ga": null,
+        "recommended": null,
         "feature": null,
-        "lastChecked": "2026-05-13",
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": null,
@@ -2397,7 +3173,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -2407,14 +3184,20 @@
       "category": "Security Operations",
       "subcategory": "Other / Specialized",
       "uiCategory": "Secure Networking",
-      "tags": ["FortiOS variant", "embedded", "OEM"],
-      "deploymentVariants": ["Embedded"],
+      "tags": [
+        "FortiOS variant",
+        "embedded",
+        "OEM"
+      ],
+      "deploymentVariants": [
+        "Embedded"
+      ],
       "firmware": null,
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": null,
@@ -2423,7 +3206,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -2433,14 +3217,21 @@
       "category": "Security Operations",
       "subcategory": "Other / Specialized",
       "uiCategory": "Secure Networking",
-      "tags": ["bypass", "network tap", "inline bypass", "fail-open"],
-      "deploymentVariants": ["Appliance"],
+      "tags": [
+        "bypass",
+        "network tap",
+        "inline bypass",
+        "fail-open"
+      ],
+      "deploymentVariants": [
+        "Appliance"
+      ],
       "firmware": null,
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": null,
@@ -2449,7 +3240,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -2459,14 +3251,20 @@
       "category": "Security Operations",
       "subcategory": "Other / Specialized",
       "uiCategory": "Secure Networking",
-      "tags": ["network tap", "passive monitoring", "traffic capture"],
-      "deploymentVariants": ["Appliance"],
+      "tags": [
+        "network tap",
+        "passive monitoring",
+        "traffic capture"
+      ],
+      "deploymentVariants": [
+        "Appliance"
+      ],
       "firmware": null,
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": null,
@@ -2475,7 +3273,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -2485,14 +3284,20 @@
       "category": "Security Operations",
       "subcategory": "Other / Specialized",
       "uiCategory": "Security Operations",
-      "tags": ["telemetry", "monitoring", "network visibility"],
-      "deploymentVariants": ["SaaS"],
+      "tags": [
+        "telemetry",
+        "monitoring",
+        "network visibility"
+      ],
+      "deploymentVariants": [
+        "SaaS"
+      ],
       "firmware": null,
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": null,
@@ -2501,7 +3306,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": null,
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -2511,14 +3317,21 @@
       "category": "Security Operations",
       "subcategory": "Other / Specialized",
       "uiCategory": "Secure Networking",
-      "tags": ["satellite", "LEO", "satellite connectivity", "remote"],
-      "deploymentVariants": ["Appliance"],
+      "tags": [
+        "satellite",
+        "LEO",
+        "satellite connectivity",
+        "remote"
+      ],
+      "deploymentVariants": [
+        "Appliance"
+      ],
       "firmware": null,
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": null,
@@ -2527,7 +3340,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": null,
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -2537,20 +3351,27 @@
       "category": "Security Operations",
       "subcategory": "Other / Specialized",
       "uiCategory": "Secure Networking",
-      "tags": ["guest portal", "guest management", "captive portal", "hotspot"],
-      "deploymentVariants": ["VM"],
+      "tags": [
+        "guest portal",
+        "guest management",
+        "captive portal",
+        "hotspot"
+      ],
+      "deploymentVariants": [
+        "VM"
+      ],
       "firmware": {
-        "ga": "1.4.0",
-        "recommended": "1.4.0",
+        "ga": null,
+        "recommended": null,
         "feature": null,
-        "lastChecked": "2026-05-13",
+        "lastChecked": null,
         "lastUpdated": null
       },
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": null,
@@ -2559,7 +3380,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -2569,14 +3391,20 @@
       "category": "Security Operations",
       "subcategory": "Other / Specialized",
       "uiCategory": "Legacy / EOL",
-      "tags": ["wireless LAN manager", "legacy", "Meru"],
-      "deploymentVariants": ["VM"],
+      "tags": [
+        "wireless LAN manager",
+        "legacy",
+        "Meru"
+      ],
+      "deploymentVariants": [
+        "VM"
+      ],
       "firmware": null,
       "eol": {
         "status": "legacy",
         "date": null,
         "notes": "Legacy WLAN management from Meru. Limited new deployments.",
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": null,
@@ -2585,7 +3413,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -2595,14 +3424,21 @@
       "category": "Security Operations",
       "subcategory": "Other / Specialized",
       "uiCategory": "Legacy / EOL",
-      "tags": ["load balancer", "legacy", "application delivery", "EOL"],
-      "deploymentVariants": ["Appliance"],
+      "tags": [
+        "load balancer",
+        "legacy",
+        "application delivery",
+        "EOL"
+      ],
+      "deploymentVariants": [
+        "Appliance"
+      ],
       "firmware": null,
       "eol": {
         "status": "eol",
         "date": null,
         "notes": "Migration path is FortiADC.",
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": null,
@@ -2611,7 +3447,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -2621,14 +3458,20 @@
       "category": "Security Operations",
       "subcategory": "Other / Specialized",
       "uiCategory": "Legacy / EOL",
-      "tags": ["WAN load balancing", "legacy", "EOL"],
-      "deploymentVariants": ["Appliance"],
+      "tags": [
+        "WAN load balancing",
+        "legacy",
+        "EOL"
+      ],
+      "deploymentVariants": [
+        "Appliance"
+      ],
       "firmware": null,
       "eol": {
         "status": "eol",
         "date": null,
         "notes": "Migration path is FortiGate SD-WAN.",
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": null,
@@ -2637,7 +3480,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": null,
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -2647,14 +3491,21 @@
       "category": "Security Operations",
       "subcategory": "Other / Specialized",
       "uiCategory": "Secure Networking",
-      "tags": ["overlay", "SD-WAN", "managed overlay", "network as a service"],
-      "deploymentVariants": ["Managed Service"],
+      "tags": [
+        "overlay",
+        "SD-WAN",
+        "managed overlay",
+        "network as a service"
+      ],
+      "deploymentVariants": [
+        "Managed Service"
+      ],
       "firmware": null,
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": null,
@@ -2663,7 +3514,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": null,
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources/SD-WAN"
       }
     },
     {
@@ -2673,14 +3525,21 @@
       "category": "Security Operations",
       "subcategory": "Other / Specialized",
       "uiCategory": "Email & Data Protection",
-      "tags": ["data management", "secure data", "storage"],
-      "deploymentVariants": ["Appliance", "VM"],
+      "tags": [
+        "data management",
+        "secure data",
+        "storage"
+      ],
+      "deploymentVariants": [
+        "Appliance",
+        "VM"
+      ],
       "firmware": null,
       "eol": {
         "status": "active",
         "date": null,
         "notes": null,
-        "lifecycleUrl": "https://www.fortinet.com/support/support-services/product-life-cycle-support"
+        "lifecycleUrl": "https://support.fortinet.com/Information/ProductLifeCycle.aspx"
       },
       "links": {
         "productPage": null,
@@ -2689,7 +3548,8 @@
         "adminGuide": null,
         "datasheet": null,
         "firmwareDownload": null,
-        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook"
+        "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     }
   ]

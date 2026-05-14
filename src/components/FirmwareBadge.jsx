@@ -15,6 +15,17 @@ export default function FirmwareBadge({ firmware }) {
     );
   }
 
+  if (!firmware.ga) {
+    return (
+      <span
+        className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md text-[11px] font-mono text-inkFaint bg-surfaceAlt border border-border"
+        title="Awaiting scraper run — version not yet verified against Fortinet docs."
+      >
+        version pending
+      </span>
+    );
+  }
+
   const age = daysBetween(firmware.lastChecked);
   let cls = 'text-green bg-greenDim border-greenBorder';
   let label = 'fresh';
@@ -26,7 +37,7 @@ export default function FirmwareBadge({ firmware }) {
       className={`inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md text-[11.5px] font-mono border ${cls}`}
       title={`Data last checked ${age === Infinity ? 'never' : `${age}d ago`} (${label})`}
     >
-      <span className="font-semibold">GA {firmware.ga || '?'}</span>
+      <span className="font-semibold">GA {firmware.ga}</span>
     </span>
   );
 }
