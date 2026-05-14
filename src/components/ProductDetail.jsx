@@ -58,6 +58,144 @@ function LinkRow({ label, href }) {
   );
 }
 
+const PLATFORM_META = {
+  // Public cloud
+  aws: { label: 'AWS', kind: 'public', order: 1 },
+  azure: { label: 'Azure', kind: 'public', order: 2 },
+  gcp: { label: 'Google Cloud', kind: 'public', order: 3 },
+  oci: { label: 'Oracle Cloud', kind: 'public', order: 4 },
+  alicloud: { label: 'AliCloud', kind: 'public', order: 5 },
+  'ibm-cloud': { label: 'IBM Cloud', kind: 'public', order: 6 },
+  // Private cloud / on-prem hypervisor
+  'vmware-esxi': { label: 'VMware ESXi', kind: 'private', order: 1 },
+  kvm: { label: 'KVM', kind: 'private', order: 2 },
+  'microsoft-hyper-v': { label: 'Hyper-V', kind: 'private', order: 3 },
+  openstack: { label: 'OpenStack', kind: 'private', order: 4 },
+  xen: { label: 'Xen', kind: 'private', order: 5 },
+  nutanix: { label: 'Nutanix', kind: 'private', order: 6 },
+  'cisco-aci': { label: 'Cisco ACI', kind: 'private', order: 7 },
+  docker: { label: 'Docker', kind: 'private', order: 8 },
+  kubernetes: { label: 'Kubernetes', kind: 'private', order: 9 },
+  proxmox: { label: 'Proxmox', kind: 'private', order: 10 },
+};
+
+function PlatformChip({ label, href }) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group inline-flex items-center justify-between gap-2 px-2.5 py-1.5 rounded-md bg-surfaceAlt hover:bg-hover border border-border hover:border-forti/40 transition-colors text-[12.5px] text-ink"
+      title={href}
+    >
+      <span className="font-medium">{label}</span>
+      <span className="text-inkFaint group-hover:text-forti text-[11px]">↗</span>
+    </a>
+  );
+}
+
+function DeployInstallSection({ vmGuides, cloudHubs }) {
+  const guideEntries = vmGuides ? Object.entries(vmGuides) : [];
+  const hubEntries = cloudHubs ? Object.entries(cloudHubs) : [];
+  if (!guideEntries.length && !hubEntries.length) return null;
+
+  const grouped = { public: [], private: [], other: [] };
+  for (const [platform, href] of guideEntries) {
+    const meta = PLATFORM_META[platform];
+    if (meta) grouped[meta.kind].push({ key: platform, ...meta, href });
+    else grouped.other.push({ key: platform, label: platform, order: 99, href });
+  }
+  for (const list of Object.values(grouped)) list.sort((a, b) => a.order - b.order);
+
+  const showPublic = grouped.public.length > 0;
+  const showPrivate = grouped.private.length > 0;
+  const showOther = grouped.other.length > 0;
+  // Hub-only fallback (no per-platform URLs were discovered).
+  const showHubsOnly = !guideEntries.length && hubEntries.length > 0;
+
+  return (
+    <section>
+      <h4 className="text-[11px] font-mono uppercase tracking-[0.12em] text-inkFaint mb-2.5">
+        Deploy &amp; Install
+      </h4>
+
+      {showPublic && (
+        <div className="mb-3">
+          <div className="text-[10.5px] font-mono uppercase tracking-wider text-inkFaint mb-1.5">
+            Public Cloud
+          </div>
+          <div className="flex flex-wrap gap-1.5">
+            {grouped.public.map((p) => (
+              <PlatformChip key={p.key} label={p.label} href={p.href} />
+            ))}
+          </div>
+        </div>
+      )}
+
+      {showPrivate && (
+        <div className="mb-3">
+          <div className="text-[10.5px] font-mono uppercase tracking-wider text-inkFaint mb-1.5">
+            Private Cloud / Hypervisor
+          </div>
+          <div className="flex flex-wrap gap-1.5">
+            {grouped.private.map((p) => (
+              <PlatformChip key={p.key} label={p.label} href={p.href} />
+            ))}
+          </div>
+        </div>
+      )}
+
+      {showOther && (
+        <div className="mb-3">
+          <div className="text-[10.5px] font-mono uppercase tracking-wider text-inkFaint mb-1.5">
+            Other
+          </div>
+          <div className="flex flex-wrap gap-1.5">
+            {grouped.other.map((p) => (
+              <PlatformChip key={p.key} label={p.label} href={p.href} />
+            ))}
+          </div>
+        </div>
+      )}
+
+      {showHubsOnly && (
+        <div className="space-y-1.5">
+          <div className="text-[12px] text-inkDim leading-relaxed mb-1.5">
+            Fortinet hasn't published per-platform admin guides for this product. These hubs let you pick your hypervisor on docs.fortinet.com:
+          </div>
+          {hubEntries.map(([kind, href]) => (
+            <LinkRow
+              key={kind}
+              label={kind === 'public' ? 'Public Cloud Hub (AWS, Azure, GCP, OCI...)' : 'Private Cloud Hub (ESXi, KVM, Hyper-V...)'}
+              href={href}
+            />
+          ))}
+        </div>
+      )}
+
+      {!showHubsOnly && hubEntries.length > 0 && (
+        <div className="mt-2 text-[11.5px] text-inkFaint font-mono">
+          Need a different hypervisor? See the{' '}
+          {hubEntries.map(([kind, href], i) => (
+            <span key={kind}>
+              {i > 0 && ' or '}
+              <a
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-forti hover:underline"
+              >
+                {kind === 'public' ? 'public cloud hub' : 'private cloud hub'}
+              </a>
+            </span>
+          ))}
+          .
+        </div>
+      )}
+    </section>
+  );
+}
+
 export default function ProductDetail({ product, onClose }) {
   useEffect(() => {
     if (!product) return;
@@ -76,7 +214,6 @@ export default function ProductDetail({ product, onClose }) {
   const isEol = product.eol?.status === 'eol';
   const isLegacy = product.eol?.status === 'legacy';
   const fw = product.firmware;
-  const cloudDocs = product.cloudDocs && Object.entries(product.cloudDocs).filter(([, v]) => v);
 
   return (
     <div
@@ -194,24 +331,18 @@ export default function ProductDetail({ product, onClose }) {
             </div>
           </Section>
 
+          <DeployInstallSection
+            vmGuides={product.links?.vmGuides}
+            cloudHubs={product.links?.cloudHubs}
+          />
+
           <Section title="Download &amp; Support">
             <div className="space-y-1.5">
               <LinkRow label="Firmware Download (Support Portal)" href={product.links?.firmwareDownload} />
-              <LinkRow label="VM / Cloud Installation Guide" href={product.links?.vmInstaller} />
               <LinkRow label="Product Page" href={product.links?.productPage} />
               <LinkRow label="Datasheet (PDF)" href={product.links?.datasheet} />
             </div>
           </Section>
-
-          {cloudDocs && cloudDocs.length > 0 && (
-            <Section title="Cloud-Specific Docs">
-              <div className="space-y-1.5">
-                {cloudDocs.map(([key, href]) => (
-                  <LinkRow key={key} label={`${key.toUpperCase()} deployment guide`} href={href} />
-                ))}
-              </div>
-            </Section>
-          )}
 
           <Section title="Lifecycle">
             <div className="space-y-2 text-[13.5px] text-inkBody">

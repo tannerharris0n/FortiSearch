@@ -65,14 +65,28 @@
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
         "architectureDocs": "https://docs.fortinet.com/4d-resources/NGFW",
-        "vmInstaller": "https://docs.fortinet.com/document/fortigate/8.0.0/fortigate-virtualization"
-      },
-      "cloudDocs": {
-        "aws": "https://docs.fortinet.com/product/fortigate-public-cloud/aws",
-        "azure": "https://docs.fortinet.com/product/fortigate-public-cloud/azure",
-        "gcp": "https://docs.fortinet.com/product/fortigate-public-cloud/gcp",
-        "oci": "https://docs.fortinet.com/product/fortigate-public-cloud/oci",
-        "private": "https://docs.fortinet.com/product/fortigate-private-cloud"
+        "cloudHubs": {
+          "public": "https://docs.fortinet.com/product/fortigate-public-cloud",
+          "private": "https://docs.fortinet.com/product/fortigate-private-cloud"
+        },
+        "vmGuides": {
+          "aws": "https://docs.fortinet.com/document/fortigate-public-cloud/8.0.0/aws-administration-guide",
+          "azure": "https://docs.fortinet.com/document/fortigate-public-cloud/8.0.0/azure-administration-guide",
+          "gcp": "https://docs.fortinet.com/document/fortigate-public-cloud/8.0.0/gcp-administration-guide",
+          "oci": "https://docs.fortinet.com/document/fortigate-public-cloud/8.0.0/oci-administration-guide",
+          "alicloud": "https://docs.fortinet.com/document/fortigate-public-cloud/8.0.0/alicloud-administration-guide",
+          "ibm-cloud": "https://docs.fortinet.com/document/fortigate-public-cloud/8.0.0/ibm-cloud-administration-guide",
+          "cisco-aci": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/cisco-aci-administration-guide",
+          "kubernetes": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/kubernetes-administration-guide",
+          "xen": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/xen-administration-guide",
+          "proxmox": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/proxmox-administration-guide",
+          "vmware-esxi": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/vmware-esxi-administration-guide",
+          "kvm": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/kvm-administration-guide",
+          "microsoft-hyper-v": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/microsoft-hyper-v-administration-guide",
+          "nutanix": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/nutanix-administration-guide",
+          "docker": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/docker-administration-guide",
+          "openstack": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/openstack-administration-guide"
+        }
       }
     },
     {
@@ -113,7 +127,29 @@
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
-        "architectureDocs": "https://docs.fortinet.com/4d-resources/NGFW"
+        "architectureDocs": "https://docs.fortinet.com/4d-resources/NGFW",
+        "vmGuides": {
+          "aws": "https://docs.fortinet.com/document/fortigate-public-cloud/8.0.0/aws-administration-guide",
+          "azure": "https://docs.fortinet.com/document/fortigate-public-cloud/8.0.0/azure-administration-guide",
+          "gcp": "https://docs.fortinet.com/document/fortigate-public-cloud/8.0.0/gcp-administration-guide",
+          "oci": "https://docs.fortinet.com/document/fortigate-public-cloud/8.0.0/oci-administration-guide",
+          "alicloud": "https://docs.fortinet.com/document/fortigate-public-cloud/8.0.0/alicloud-administration-guide",
+          "ibm-cloud": "https://docs.fortinet.com/document/fortigate-public-cloud/8.0.0/ibm-cloud-administration-guide",
+          "cisco-aci": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/cisco-aci-administration-guide",
+          "kubernetes": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/kubernetes-administration-guide",
+          "xen": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/xen-administration-guide",
+          "proxmox": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/proxmox-administration-guide",
+          "vmware-esxi": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/vmware-esxi-administration-guide",
+          "kvm": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/kvm-administration-guide",
+          "microsoft-hyper-v": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/microsoft-hyper-v-administration-guide",
+          "nutanix": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/nutanix-administration-guide",
+          "docker": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/docker-administration-guide",
+          "openstack": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/openstack-administration-guide"
+        },
+        "cloudHubs": {
+          "public": "https://docs.fortinet.com/product/fortigate-public-cloud",
+          "private": "https://docs.fortinet.com/product/fortigate-private-cloud"
+        }
       }
     },
     {
@@ -153,7 +189,29 @@
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
-        "architectureDocs": "https://docs.fortinet.com/4d-resources/NGFW"
+        "architectureDocs": "https://docs.fortinet.com/4d-resources/NGFW",
+        "vmGuides": {
+          "aws": "https://docs.fortinet.com/document/fortigate-public-cloud/8.0.0/aws-administration-guide",
+          "azure": "https://docs.fortinet.com/document/fortigate-public-cloud/8.0.0/azure-administration-guide",
+          "gcp": "https://docs.fortinet.com/document/fortigate-public-cloud/8.0.0/gcp-administration-guide",
+          "oci": "https://docs.fortinet.com/document/fortigate-public-cloud/8.0.0/oci-administration-guide",
+          "alicloud": "https://docs.fortinet.com/document/fortigate-public-cloud/8.0.0/alicloud-administration-guide",
+          "ibm-cloud": "https://docs.fortinet.com/document/fortigate-public-cloud/8.0.0/ibm-cloud-administration-guide",
+          "cisco-aci": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/cisco-aci-administration-guide",
+          "kubernetes": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/kubernetes-administration-guide",
+          "xen": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/xen-administration-guide",
+          "proxmox": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/proxmox-administration-guide",
+          "vmware-esxi": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/vmware-esxi-administration-guide",
+          "kvm": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/kvm-administration-guide",
+          "microsoft-hyper-v": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/microsoft-hyper-v-administration-guide",
+          "nutanix": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/nutanix-administration-guide",
+          "docker": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/docker-administration-guide",
+          "openstack": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/openstack-administration-guide"
+        },
+        "cloudHubs": {
+          "public": "https://docs.fortinet.com/product/fortigate-public-cloud",
+          "private": "https://docs.fortinet.com/product/fortigate-private-cloud"
+        }
       }
     },
     {
@@ -193,7 +251,29 @@
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
-        "architectureDocs": "https://docs.fortinet.com/4d-resources/NGFW"
+        "architectureDocs": "https://docs.fortinet.com/4d-resources/NGFW",
+        "vmGuides": {
+          "aws": "https://docs.fortinet.com/document/fortigate-public-cloud/8.0.0/aws-administration-guide",
+          "azure": "https://docs.fortinet.com/document/fortigate-public-cloud/8.0.0/azure-administration-guide",
+          "gcp": "https://docs.fortinet.com/document/fortigate-public-cloud/8.0.0/gcp-administration-guide",
+          "oci": "https://docs.fortinet.com/document/fortigate-public-cloud/8.0.0/oci-administration-guide",
+          "alicloud": "https://docs.fortinet.com/document/fortigate-public-cloud/8.0.0/alicloud-administration-guide",
+          "ibm-cloud": "https://docs.fortinet.com/document/fortigate-public-cloud/8.0.0/ibm-cloud-administration-guide",
+          "cisco-aci": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/cisco-aci-administration-guide",
+          "kubernetes": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/kubernetes-administration-guide",
+          "xen": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/xen-administration-guide",
+          "proxmox": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/proxmox-administration-guide",
+          "vmware-esxi": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/vmware-esxi-administration-guide",
+          "kvm": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/kvm-administration-guide",
+          "microsoft-hyper-v": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/microsoft-hyper-v-administration-guide",
+          "nutanix": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/nutanix-administration-guide",
+          "docker": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/docker-administration-guide",
+          "openstack": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/openstack-administration-guide"
+        },
+        "cloudHubs": {
+          "public": "https://docs.fortinet.com/product/fortigate-public-cloud",
+          "private": "https://docs.fortinet.com/product/fortigate-private-cloud"
+        }
       }
     },
     {
@@ -238,7 +318,28 @@
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
         "architectureDocs": "https://docs.fortinet.com/4d-resources/NGFW",
-        "vmInstaller": "https://docs.fortinet.com/document/fortigate/8.0.0/fortigate-virtualization"
+        "vmGuides": {
+          "aws": "https://docs.fortinet.com/document/fortigate-public-cloud/8.0.0/aws-administration-guide",
+          "azure": "https://docs.fortinet.com/document/fortigate-public-cloud/8.0.0/azure-administration-guide",
+          "gcp": "https://docs.fortinet.com/document/fortigate-public-cloud/8.0.0/gcp-administration-guide",
+          "oci": "https://docs.fortinet.com/document/fortigate-public-cloud/8.0.0/oci-administration-guide",
+          "alicloud": "https://docs.fortinet.com/document/fortigate-public-cloud/8.0.0/alicloud-administration-guide",
+          "ibm-cloud": "https://docs.fortinet.com/document/fortigate-public-cloud/8.0.0/ibm-cloud-administration-guide",
+          "cisco-aci": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/cisco-aci-administration-guide",
+          "kubernetes": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/kubernetes-administration-guide",
+          "xen": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/xen-administration-guide",
+          "proxmox": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/proxmox-administration-guide",
+          "vmware-esxi": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/vmware-esxi-administration-guide",
+          "kvm": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/kvm-administration-guide",
+          "microsoft-hyper-v": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/microsoft-hyper-v-administration-guide",
+          "nutanix": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/nutanix-administration-guide",
+          "docker": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/docker-administration-guide",
+          "openstack": "https://docs.fortinet.com/document/fortigate-private-cloud/8.0.0/openstack-administration-guide"
+        },
+        "cloudHubs": {
+          "public": "https://docs.fortinet.com/product/fortigate-public-cloud",
+          "private": "https://docs.fortinet.com/product/fortigate-private-cloud"
+        }
       }
     },
     {
@@ -283,7 +384,23 @@
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
         "architectureDocs": "https://docs.fortinet.com/4d-resources",
-        "vmInstaller": "https://docs.fortinet.com/vm"
+        "cloudHubs": {
+          "public": "https://docs.fortinet.com/product/fortimanager-public-cloud",
+          "private": "https://docs.fortinet.com/product/fortimanager-private-cloud"
+        },
+        "vmGuides": {
+          "azure": "https://docs.fortinet.com/document/fortimanager-public-cloud/8.0.0/azure-administration-guide",
+          "aws": "https://docs.fortinet.com/document/fortimanager-public-cloud/8.0.0/aws-administration-guide",
+          "gcp": "https://docs.fortinet.com/document/fortimanager-public-cloud/8.0.0/gcp-administration-guide",
+          "alicloud": "https://docs.fortinet.com/document/fortimanager-public-cloud/8.0.0/alicloud-administration-guide",
+          "oci": "https://docs.fortinet.com/document/fortimanager-public-cloud/8.0.0/oci-administration-guide",
+          "kvm": "https://docs.fortinet.com/document/fortimanager-private-cloud/8.0.0/kvm-administration-guide",
+          "vmware-esxi": "https://docs.fortinet.com/document/fortimanager-private-cloud/8.0.0/vmware-esxi-administration-guide",
+          "xen": "https://docs.fortinet.com/document/fortimanager-private-cloud/8.0.0/xen-administration-guide",
+          "openstack": "https://docs.fortinet.com/document/fortimanager-private-cloud/8.0.0/openstack-administration-guide",
+          "nutanix": "https://docs.fortinet.com/document/fortimanager-private-cloud/8.0.0/nutanix-administration-guide",
+          "microsoft-hyper-v": "https://docs.fortinet.com/document/fortimanager-private-cloud/8.0.0/microsoft-hyper-v-administration-guide"
+        }
       }
     },
     {
@@ -326,8 +443,7 @@
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
-        "architectureDocs": "https://docs.fortinet.com/4d-resources",
-        "vmInstaller": "https://docs.fortinet.com/vm"
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -369,9 +485,6 @@
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
         "architectureDocs": "https://docs.fortinet.com/4d-resources"
-      },
-      "cloudDocs": {
-        "service": "https://docs.fortinet.com/product/forticonverter-service"
       }
     },
     {
@@ -523,8 +636,7 @@
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
-        "architectureDocs": "https://docs.fortinet.com/4d-resources/Switching",
-        "vmInstaller": "https://docs.fortinet.com/vm"
+        "architectureDocs": "https://docs.fortinet.com/4d-resources/Switching"
       }
     },
     {
@@ -687,8 +799,7 @@
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
-        "architectureDocs": "https://docs.fortinet.com/4d-resources",
-        "vmInstaller": "https://docs.fortinet.com/vm"
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -728,8 +839,7 @@
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
-        "architectureDocs": "https://docs.fortinet.com/4d-resources",
-        "vmInstaller": "https://docs.fortinet.com/vm"
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -798,8 +908,7 @@
         "datasheet": null,
         "firmwareDownload": null,
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
-        "architectureDocs": "https://docs.fortinet.com/4d-resources/Wireless",
-        "vmInstaller": "https://docs.fortinet.com/vm"
+        "architectureDocs": "https://docs.fortinet.com/4d-resources/Wireless"
       }
     },
     {
@@ -881,8 +990,7 @@
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
-        "architectureDocs": "https://docs.fortinet.com/4d-resources",
-        "vmInstaller": "https://docs.fortinet.com/vm"
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -924,8 +1032,7 @@
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
-        "architectureDocs": "https://docs.fortinet.com/4d-resources",
-        "vmInstaller": "https://docs.fortinet.com/vm"
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -1239,8 +1346,7 @@
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
-        "architectureDocs": "https://docs.fortinet.com/4d-resources",
-        "vmInstaller": "https://docs.fortinet.com/vm"
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -1281,8 +1387,7 @@
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
-        "architectureDocs": "https://docs.fortinet.com/4d-resources",
-        "vmInstaller": "https://docs.fortinet.com/vm"
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -1396,8 +1501,7 @@
         "datasheet": null,
         "firmwareDownload": null,
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
-        "architectureDocs": "https://docs.fortinet.com/4d-resources/SASE",
-        "vmInstaller": "https://docs.fortinet.com/vm"
+        "architectureDocs": "https://docs.fortinet.com/4d-resources/SASE"
       }
     },
     {
@@ -1477,7 +1581,10 @@
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
         "architectureDocs": "https://docs.fortinet.com/4d-resources/SASE",
-        "vmInstaller": "https://docs.fortinet.com/vm"
+        "cloudHubs": {
+          "public": "https://docs.fortinet.com/product/fortiproxy-public-cloud",
+          "private": "https://docs.fortinet.com/product/fortiproxy-private-cloud"
+        }
       }
     },
     {
@@ -1887,7 +1994,10 @@
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
         "architectureDocs": "https://docs.fortinet.com/4d-resources/WAF",
-        "vmInstaller": "https://docs.fortinet.com/vm"
+        "cloudHubs": {
+          "public": "https://docs.fortinet.com/product/fortiweb-public-cloud",
+          "private": "https://docs.fortinet.com/product/fortiweb-private-cloud"
+        }
       }
     },
     {
@@ -1931,7 +2041,10 @@
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
         "architectureDocs": "https://docs.fortinet.com/4d-resources/ADC",
-        "vmInstaller": "https://docs.fortinet.com/vm"
+        "cloudHubs": {
+          "public": "https://docs.fortinet.com/product/fortiadc-public-cloud",
+          "private": "https://docs.fortinet.com/product/fortiadc-private-cloud"
+        }
       }
     },
     {
@@ -2011,7 +2124,23 @@
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
         "architectureDocs": "https://docs.fortinet.com/4d-resources",
-        "vmInstaller": "https://docs.fortinet.com/vm"
+        "cloudHubs": {
+          "public": "https://docs.fortinet.com/product/fortianalyzer-public-cloud",
+          "private": "https://docs.fortinet.com/product/fortianalyzer-private-cloud"
+        },
+        "vmGuides": {
+          "oci": "https://docs.fortinet.com/document/fortianalyzer-public-cloud/8.0.0/oci-administration-guide",
+          "azure": "https://docs.fortinet.com/document/fortianalyzer-public-cloud/8.0.0/azure-administration-guide",
+          "aws": "https://docs.fortinet.com/document/fortianalyzer-public-cloud/8.0.0/aws-administration-guide",
+          "gcp": "https://docs.fortinet.com/document/fortianalyzer-public-cloud/8.0.0/gcp-administration-guide",
+          "alicloud": "https://docs.fortinet.com/document/fortianalyzer-public-cloud/8.0.0/alicloud-administration-guide",
+          "nutanix": "https://docs.fortinet.com/document/fortianalyzer-private-cloud/8.0.0/nutanix-administration-guide",
+          "xen": "https://docs.fortinet.com/document/fortianalyzer-private-cloud/8.0.0/xen-administration-guide",
+          "vmware-esxi": "https://docs.fortinet.com/document/fortianalyzer-private-cloud/8.0.0/vmware-esxi-administration-guide",
+          "kvm": "https://docs.fortinet.com/document/fortianalyzer-private-cloud/8.0.0/kvm-administration-guide",
+          "microsoft-hyper-v": "https://docs.fortinet.com/document/fortianalyzer-private-cloud/8.0.0/microsoft-hyper-v-administration-guide",
+          "openstack": "https://docs.fortinet.com/document/fortianalyzer-private-cloud/8.0.0/openstack-administration-guide"
+        }
       }
     },
     {
@@ -2095,8 +2224,7 @@
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
-        "architectureDocs": "https://docs.fortinet.com/4d-resources",
-        "vmInstaller": "https://docs.fortinet.com/vm"
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -2140,8 +2268,7 @@
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
-        "architectureDocs": "https://docs.fortinet.com/4d-resources",
-        "vmInstaller": "https://docs.fortinet.com/vm"
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -2328,8 +2455,7 @@
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
-        "architectureDocs": "https://docs.fortinet.com/4d-resources",
-        "vmInstaller": "https://docs.fortinet.com/vm"
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -2411,7 +2537,21 @@
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
         "architectureDocs": "https://docs.fortinet.com/4d-resources/IAM",
-        "vmInstaller": "https://docs.fortinet.com/vm"
+        "cloudHubs": {
+          "public": "https://docs.fortinet.com/product/fortiauthenticator-public-cloud",
+          "private": "https://docs.fortinet.com/product/fortiauthenticator-private-cloud"
+        },
+        "vmGuides": {
+          "oci": "https://docs.fortinet.com/document/fortiauthenticator-public-cloud/8.0.0/oci-administration-guide",
+          "azure": "https://docs.fortinet.com/document/fortiauthenticator-public-cloud/8.0.0/azure-administration-guide",
+          "aws": "https://docs.fortinet.com/document/fortiauthenticator-public-cloud/8.0.0/aws-administration-guide",
+          "nutanix": "https://docs.fortinet.com/document/fortiauthenticator-private-cloud/8.0.0/nutanix-administration-guide",
+          "microsoft-hyper-v": "https://docs.fortinet.com/document/fortiauthenticator-private-cloud/8.0.0/microsoft-hyper-v-administration-guide",
+          "vmware-esxi": "https://docs.fortinet.com/document/fortiauthenticator-private-cloud/8.0.0/vmware-esxi-administration-guide",
+          "kvm": "https://docs.fortinet.com/document/fortiauthenticator-private-cloud/8.0.0/kvm-administration-guide",
+          "xen": "https://docs.fortinet.com/document/fortiauthenticator-private-cloud/8.0.0/xen-administration-guide",
+          "proxmox": "https://docs.fortinet.com/document/fortiauthenticator-private-cloud/8.0.0/proxmox-administration-guide"
+        }
       }
     },
     {
@@ -2568,7 +2708,21 @@
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
         "architectureDocs": "https://docs.fortinet.com/4d-resources/IAM",
-        "vmInstaller": "https://docs.fortinet.com/vm"
+        "cloudHubs": {
+          "public": "https://docs.fortinet.com/product/fortipam-public-cloud",
+          "private": "https://docs.fortinet.com/product/fortipam-private-cloud"
+        },
+        "vmGuides": {
+          "oci": "https://docs.fortinet.com/document/fortipam-public-cloud/1.9.0/oci-administration-guide",
+          "gcp": "https://docs.fortinet.com/document/fortipam-public-cloud/1.9.0/gcp-administration-guide",
+          "azure": "https://docs.fortinet.com/document/fortipam-public-cloud/1.9.0/azure-administration-guide",
+          "aws": "https://docs.fortinet.com/document/fortipam-public-cloud/1.9.0/aws-administration-guide",
+          "kvm": "https://docs.fortinet.com/document/fortipam-private-cloud/1.9.0/kvm-administration-guide",
+          "vmware-esxi": "https://docs.fortinet.com/document/fortipam-private-cloud/1.9.0/vmware-esxi-administration-guide",
+          "nutanix": "https://docs.fortinet.com/document/fortipam-private-cloud/1.9.0/nutanix-administration-guide",
+          "proxmox": "https://docs.fortinet.com/document/fortipam-private-cloud/1.9.0/proxmox-administration-guide",
+          "microsoft-hyper-v": "https://docs.fortinet.com/document/fortipam-private-cloud/1.9.0/microsoft-hyper-v-administration-guide"
+        }
       }
     },
     {
@@ -2611,8 +2765,7 @@
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
-        "architectureDocs": "https://docs.fortinet.com/4d-resources",
-        "vmInstaller": "https://docs.fortinet.com/vm"
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -2724,7 +2877,10 @@
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
         "architectureDocs": "https://docs.fortinet.com/4d-resources",
-        "vmInstaller": "https://docs.fortinet.com/vm"
+        "cloudHubs": {
+          "public": "https://docs.fortinet.com/product/fortisandbox-public-cloud",
+          "private": "https://docs.fortinet.com/product/fortisandbox-private-cloud"
+        }
       }
     },
     {
@@ -2767,7 +2923,10 @@
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
         "architectureDocs": "https://docs.fortinet.com/4d-resources",
-        "vmInstaller": "https://docs.fortinet.com/vm"
+        "cloudHubs": {
+          "public": "https://docs.fortinet.com/product/fortindr-public-cloud",
+          "private": "https://docs.fortinet.com/product/fortindr-private-cloud"
+        }
       }
     },
     {
@@ -2847,10 +3006,10 @@
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
         "architectureDocs": "https://docs.fortinet.com/4d-resources",
-        "vmInstaller": "https://docs.fortinet.com/vm"
-      },
-      "cloudDocs": {
-        "daas": "https://docs.fortinet.com/product/fortideceptor-daas"
+        "cloudHubs": {
+          "public": "https://docs.fortinet.com/product/fortideceptor-public-cloud",
+          "private": "https://docs.fortinet.com/product/fortideceptor-private-cloud"
+        }
       }
     },
     {
@@ -2928,7 +3087,9 @@
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
         "architectureDocs": "https://docs.fortinet.com/4d-resources",
-        "vmInstaller": "https://docs.fortinet.com/vm"
+        "cloudHubs": {
+          "public": "https://docs.fortinet.com/product/fortiisolator-public-cloud"
+        }
       }
     },
     {
@@ -2968,8 +3129,7 @@
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
-        "architectureDocs": "https://docs.fortinet.com/4d-resources",
-        "vmInstaller": "https://docs.fortinet.com/vm"
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -3010,7 +3170,14 @@
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
         "architectureDocs": "https://docs.fortinet.com/4d-resources",
-        "vmInstaller": "https://docs.fortinet.com/vm"
+        "cloudHubs": {
+          "public": "https://docs.fortinet.com/product/fortiportal-public-cloud"
+        },
+        "vmGuides": {
+          "aws": "https://docs.fortinet.com/document/fortiportal-public-cloud/7.0.0/aws-administration-guide",
+          "gcp": "https://docs.fortinet.com/document/fortiportal-public-cloud/7.0.0/gcp-administration-guide",
+          "azure": "https://docs.fortinet.com/document/fortiportal-public-cloud/7.0.0/azure-administration-guide"
+        }
       }
     },
     {
@@ -3052,7 +3219,10 @@
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
         "architectureDocs": "https://docs.fortinet.com/4d-resources",
-        "vmInstaller": "https://docs.fortinet.com/vm"
+        "cloudHubs": {
+          "public": "https://docs.fortinet.com/product/fortitester-public-cloud",
+          "private": "https://docs.fortinet.com/product/fortitester-private-cloud"
+        }
       }
     },
     {
@@ -3096,7 +3266,17 @@
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
         "architectureDocs": "https://docs.fortinet.com/4d-resources",
-        "vmInstaller": "https://docs.fortinet.com/vm"
+        "cloudHubs": {
+          "public": "https://docs.fortinet.com/product/fortisra-public-cloud",
+          "private": "https://docs.fortinet.com/product/fortisra-private-cloud"
+        },
+        "vmGuides": {
+          "aws": "https://docs.fortinet.com/document/fortisra-public-cloud/1.7.0/aws-administration-guide",
+          "azure": "https://docs.fortinet.com/document/fortisra-public-cloud/1.7.0/azure-administration-guide",
+          "kvm": "https://docs.fortinet.com/document/fortisra-private-cloud/1.7.0/kvm-administration-guide",
+          "microsoft-hyper-v": "https://docs.fortinet.com/document/fortisra-private-cloud/1.7.0/microsoft-hyper-v-administration-guide",
+          "vmware-esxi": "https://docs.fortinet.com/document/fortisra-private-cloud/1.7.0/vmware-esxi-administration-guide"
+        }
       }
     },
     {
@@ -3131,8 +3311,7 @@
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
-        "architectureDocs": "https://docs.fortinet.com/4d-resources",
-        "vmInstaller": "https://docs.fortinet.com/vm"
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -3166,8 +3345,7 @@
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
-        "architectureDocs": "https://docs.fortinet.com/4d-resources",
-        "vmInstaller": "https://docs.fortinet.com/vm"
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -3414,8 +3592,7 @@
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
-        "architectureDocs": "https://docs.fortinet.com/4d-resources",
-        "vmInstaller": "https://docs.fortinet.com/vm"
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -3448,8 +3625,7 @@
         "datasheet": null,
         "firmwareDownload": "https://support.fortinet.com/Download/FirmwareImages.aspx",
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
-        "architectureDocs": "https://docs.fortinet.com/4d-resources",
-        "vmInstaller": "https://docs.fortinet.com/vm"
+        "architectureDocs": "https://docs.fortinet.com/4d-resources"
       }
     },
     {
@@ -3585,7 +3761,9 @@
         "firmwareDownload": null,
         "cookbookSearch": "https://docs.fortinet.com/fortinet-cookbook",
         "architectureDocs": "https://docs.fortinet.com/4d-resources",
-        "vmInstaller": "https://docs.fortinet.com/vm"
+        "cloudHubs": {
+          "private": "https://docs.fortinet.com/product/fortidata-private-cloud"
+        }
       }
     }
   ]
