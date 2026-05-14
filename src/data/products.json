@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastChecked": "2026-05-13",
+    "lastChecked": "2026-05-14",
     "checkFrequency": "weekly",
-    "nextCheck": "2026-05-20",
+    "nextCheck": "2026-05-21",
     "sourceNote": "Versions are scraped weekly from docs.fortinet.com and cross-referenced against the Fortinet recommended-release KB. FortiOS-family firmware was hand-verified on 2026-05-13; other products are awaiting the next scraper run. Cloud / SaaS products carry no firmware version."
   },
   "uiCategories": [
@@ -44,11 +44,11 @@
         "Container"
       ],
       "firmware": {
-        "ga": "7.6.6",
+        "ga": "8.0.0",
         "recommended": "7.6.6",
         "feature": "8.0.0",
-        "lastChecked": "2026-05-13",
-        "lastUpdated": "2026-05-13"
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -92,11 +92,11 @@
         "Chassis"
       ],
       "firmware": {
-        "ga": "7.6.6",
+        "ga": "8.0.0",
         "recommended": "7.6.6",
         "feature": "8.0.0",
-        "lastChecked": "2026-05-13",
-        "lastUpdated": "2026-05-13"
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -132,11 +132,11 @@
         "Chassis"
       ],
       "firmware": {
-        "ga": "7.6.6",
+        "ga": "8.0.0",
         "recommended": "7.6.6",
         "feature": "8.0.0",
-        "lastChecked": "2026-05-13",
-        "lastUpdated": "2026-05-13"
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -172,11 +172,11 @@
         "Chassis"
       ],
       "firmware": {
-        "ga": "7.6.6",
+        "ga": "8.0.0",
         "recommended": "7.6.6",
         "feature": "8.0.0",
-        "lastChecked": "2026-05-13",
-        "lastUpdated": "2026-05-13"
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -216,11 +216,11 @@
         "VM"
       ],
       "firmware": {
-        "ga": "7.6.6",
+        "ga": "8.0.0",
         "recommended": "7.6.6",
         "feature": "8.0.0",
-        "lastChecked": "2026-05-13",
-        "lastUpdated": "2026-05-13"
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -260,11 +260,11 @@
         "Private Cloud"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "8.0.0",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -303,11 +303,11 @@
         "Public Cloud"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "3.4.0",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -344,11 +344,11 @@
         "Cloud Service"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "7.4.1",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -459,11 +459,11 @@
         "Appliance"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "8.0.0",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -499,11 +499,11 @@
         "VM"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "7.2.9",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -543,11 +543,11 @@
         "Cloud-Managed"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "8.0.0",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -584,11 +584,11 @@
         "Appliance"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "7.0.6",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -662,11 +662,11 @@
         "VM"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "7.6.6",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -702,11 +702,11 @@
         "VM"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "9.4.8",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "legacy",
@@ -813,11 +813,11 @@
         "Appliance"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "7.6.5",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -853,11 +853,11 @@
         "VM"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "5.2.1",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "legacy",
@@ -895,11 +895,11 @@
         "VM"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "7.4.1",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -939,7 +939,7 @@
         "ga": null,
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
+        "lastChecked": "2026-05-14",
         "lastUpdated": null
       },
       "eol": {
@@ -979,7 +979,7 @@
         "ga": null,
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
+        "lastChecked": "2026-05-14",
         "lastUpdated": null
       },
       "eol": {
@@ -1016,11 +1016,11 @@
         "Appliance"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "7.2.11",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -1057,11 +1057,11 @@
         "Mobile"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "7.4.0",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -1102,11 +1102,11 @@
         "macOS"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "2.6.0",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -1209,11 +1209,11 @@
         "SaaS"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "1.0.0",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -1250,11 +1250,11 @@
         "VM"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "1.3.0",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -1290,11 +1290,11 @@
         "Windows"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "2.6.5",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -1443,11 +1443,11 @@
         "Public Cloud"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "7.6.6",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -1774,11 +1774,11 @@
         "Android"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "7.4.7",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -1852,11 +1852,11 @@
         "SaaS"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "8.0.5",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -1895,11 +1895,11 @@
         "Public Cloud"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "8.0.3",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -1974,11 +1974,11 @@
         "Private Cloud"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "8.0.0",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -2015,11 +2015,11 @@
         "Appliance"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "7.6.1",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -2058,11 +2058,11 @@
         "Public Cloud"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "7.5.1",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -2102,11 +2102,11 @@
         "SaaS"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "7.6.6",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -2215,11 +2215,11 @@
         "Hybrid"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "7.2.3",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -2289,11 +2289,11 @@
         "VM"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "7.0.0",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -2370,11 +2370,11 @@
         "Public Cloud"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "8.0.3",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -2451,7 +2451,7 @@
         "ga": null,
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
+        "lastChecked": "2026-05-14",
         "lastUpdated": null
       },
       "eol": {
@@ -2526,11 +2526,11 @@
         "Appliance"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "1.9.0",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -2569,11 +2569,11 @@
         "Public Cloud"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "8.0.0",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -2680,11 +2680,11 @@
         "SaaS"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "5.0.6",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -2722,11 +2722,11 @@
         "VM"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "7.6.4",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -2801,11 +2801,11 @@
         "SaaS"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "6.2.1",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -2881,11 +2881,11 @@
         "VM"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "3.0.1",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -2921,11 +2921,11 @@
         "VM"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "7.2.5",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -2961,11 +2961,11 @@
         "VM"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "7.4.10",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -3002,11 +3002,11 @@
         "VM"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "7.6.1",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "eol",
@@ -3045,11 +3045,11 @@
         "VM"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "1.7.2",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "eol",
@@ -3154,11 +3154,11 @@
         "Appliance"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "1.1.0",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",
@@ -3361,11 +3361,11 @@
         "VM"
       ],
       "firmware": {
-        "ga": null,
+        "ga": "2.4.3",
         "recommended": null,
         "feature": null,
-        "lastChecked": null,
-        "lastUpdated": null
+        "lastChecked": "2026-05-14",
+        "lastUpdated": "2026-05-14"
       },
       "eol": {
         "status": "active",

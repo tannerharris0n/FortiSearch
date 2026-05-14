@@ -2,29 +2,27 @@
 /*
  * FortiSearch firmware updater.
  *
- * Reads src/data/products.json, walks each product with a doc slug,
- * and tries to determine the current GA point release from
- * docs.fortinet.com. Skips SaaS/cloud products that carry firmware: null.
+ * Strategy:
+ *   1. Fetch https://docs.fortinet.com/product/<slug>.
+ *   2. Trim the HTML before the first "Legacy" marker so we never grab
+ *      a legacy release.
+ *   3. Find every href of the form /document/<slug>/X.Y.Z/ in that
+ *      trimmed HTML. Anchoring on the slug guarantees the version is
+ *      tied to THIS product and not to a related-product mention,
+ *      compatibility note, or boilerplate.
+ *   4. Pick the highest X.Y.Z. That's the current GA point release.
  *
- * Node 18+ (uses global fetch). No external deps.
+ * SaaS / cloud-only products (firmware: null) are skipped entirely.
  *
- * Logic per product:
- *   1. Fetch https://docs.fortinet.com/product/<slug>. The product
- *      landing page lists major versions like "8.0", "7.6", "7.4" plus
- *      a "Legacy" group.
- *   2. Pick the highest non-legacy major from that list.
- *   3. Fetch the release-notes page for that major
- *      (/document/<slug>/<major>.0/<rn-doc>) and parse the highest
- *      x.y.z token to get the current point release.
- *   4. Stash that in firmware.ga and bump firmware.lastChecked.
- *      If the value changed, also stamp firmware.lastUpdated.
+ * The 'recommended' and 'feature' fields are NOT touched by this
+ * scraper. Those come from per-product Fortinet KB articles and are
+ * hand-curated quarterly.
  *
- * Failure modes preserve known-good data: bump lastChecked but leave
- * the stored version alone if the scrape fails at any step.
+ * Failure modes preserve known-good data: we bump lastChecked but
+ * leave the stored version alone if anything fails. Junk versions
+ * are rejected by plausibleVersion().
  *
- * The 'recommended' and 'feature' fields are *not* touched by this
- * scraper. They come from the Fortinet KB recommended-release article
- * and are hand-updated quarterly. See README for the source.
+ * Node 18+ (global fetch). No external deps.
  */
 
 import { readFile, writeFile, appendFile } from 'node:fs/promises';
@@ -34,7 +32,7 @@ import { dirname, resolve } from 'node:path';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_PATH = resolve(__dirname, '..', 'src', 'data', 'products.json');
 const DOC_HOST = 'https://docs.fortinet.com';
-const UA = 'FortiSearch-Updater/1.1 (+https://github.com/tannerharris0n/FortiSearch)';
+const UA = 'FortiSearch-Updater/2.0 (+https://github.com/tannerharris0n/FortiSearch)';
 
 const today = () => new Date().toISOString().slice(0, 10);
 const nextWeek = () => {
@@ -67,46 +65,62 @@ function compareSemver(a, b) {
 function plausibleVersion(v) {
   const parts = v.split('.').map(Number);
   if (parts.some(Number.isNaN)) return false;
-  // Reject obvious junk: years, port numbers, RFC numbers.
+  // Reject year-like majors. The biggest current Fortinet major is 8.x.
+  // 50 is generous headroom and rules out Ubuntu (22.04), Windows (10),
+  // copyright years, etc.
   if (parts[0] > 50) return false;
-  // Reject zeros only.
+  // Reject all-zero versions.
   if (parts.every((n) => n === 0)) return false;
+  // Reject placeholders: Fortinet uses .99 for unreleased / development
+  // builds (e.g., 8.0.99 in the docs site before the public point release).
+  if (parts.length >= 3 && parts[2] === 99) return false;
   return true;
 }
 
-// Pull the highest "X.Y" pair from a docs landing page. The Fortinet
-// product index renders a list of supported major versions; we want
-// the highest one outside the "Legacy" section.
-function extractLatestMajor(html) {
-  if (!html) return null;
-  // Trim everything from the first "Legacy" occurrence onward so we
-  // never grab a legacy major by accident.
-  const legacyIdx = html.search(/legacy/i);
-  const trimmed = legacyIdx > 0 ? html.slice(0, legacyIdx) : html;
+// Get the list of non-legacy major versions (X.Y) from the version
+// selector at the top of the landing page. The selector is rendered
+// inline as anchor links to /product/<slug>/X.Y, with a "Legacy" label
+// separating current from legacy majors. Trim before Legacy for the
+// major list — that part of the page is short and the selector lives
+// in the top section.
+function extractCurrentMajors(slug, html) {
+  if (!html) return [];
+  // The "Legacy" string lives inside the version selector; trim AFTER it.
+  // But the marker can also appear later in the body (FAQs, etc.). We
+  // only want the FIRST occurrence as the boundary.
+  const legacyIdx = html.search(/\bLegacy\b/i);
+  const head = legacyIdx > 0 ? html.slice(0, legacyIdx) : html;
 
-  const matches = trimmed.match(/\b(\d{1,2}\.\d{1,2})\b/g) || [];
-  const candidates = Array.from(new Set(matches)).filter(plausibleVersion);
+  const escapedSlug = slug.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&');
+  const re = new RegExp(`/product/${escapedSlug}/(\\d{1,2}\\.\\d{1,2})(?=["/?#])`, 'gi');
+  const found = new Set();
+  let m;
+  while ((m = re.exec(head)) !== null) found.add(m[1]);
+  return Array.from(found).filter(plausibleVersion);
+}
+
+// Pick the highest X.Y.Z from /document/<slug>/X.Y.Z/ hrefs across the
+// whole page. If we have a list of non-legacy majors, restrict to those.
+function extractCurrentGa(slug, html, allowedMajors) {
+  if (!html) return null;
+  const escapedSlug = slug.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&');
+  const re = new RegExp(`/document/${escapedSlug}/(\\d{1,2}\\.\\d{1,2}\\.\\d{1,2})/`, 'gi');
+
+  const found = new Set();
+  let m;
+  while ((m = re.exec(html)) !== null) found.add(m[1]);
+
+  let candidates = Array.from(found).filter(plausibleVersion);
+  if (allowedMajors && allowedMajors.length) {
+    const allowed = new Set(allowedMajors);
+    candidates = candidates.filter((v) => {
+      const major = v.split('.').slice(0, 2).join('.');
+      return allowed.has(major);
+    });
+  }
   if (!candidates.length) return null;
   candidates.sort(compareSemver);
   return candidates[0];
-}
-
-// Pull the highest "X.Y.Z" patch number from a release notes page.
-function extractLatestPatch(html, expectedMajor) {
-  if (!html) return null;
-  const re = expectedMajor
-    ? new RegExp(`\\b${expectedMajor.replace('.', '\\.')}\\.(\\d+)\\b`, 'g')
-    : /\b(\d+\.\d+\.\d+)\b/g;
-  const found = new Set();
-  let m;
-  while ((m = re.exec(html)) !== null) {
-    const full = expectedMajor ? `${expectedMajor}.${m[1]}` : m[1];
-    if (plausibleVersion(full)) found.add(full);
-  }
-  if (!found.size) return null;
-  const arr = Array.from(found);
-  arr.sort(compareSemver);
-  return arr[0];
 }
 
 async function httpGet(url) {
@@ -126,55 +140,63 @@ async function httpGet(url) {
   }
 }
 
-// Resolve the release-notes doc slug for a product. Most products use
-// `<slug>-release-notes` but FortiOS is `fortios-release-notes`. We try a
-// short list of plausible URLs and return the first that responds.
-async function tryReleaseNotes(productSlug, major) {
-  const docCandidates = [
-    `${productSlug}-release-notes`,
-    `${productSlug}os-release-notes`,
-    `fortios-release-notes`, // FortiGate / FortiCarrier special-case
-    `release-notes`,
-  ];
-  for (const doc of docCandidates) {
-    const url = `${DOC_HOST}/document/${productSlug}/${major}.0/${doc}`;
-    const html = await httpGet(url);
-    if (html) return { url, html };
-  }
-  // Fall back to the major-version index page.
-  const idx = `${DOC_HOST}/product/${productSlug}/${major}.0`;
-  const html = await httpGet(idx);
-  return html ? { url: idx, html } : null;
-}
-
 async function scrapeProduct(product) {
   const slug = slugFromDocsUrl(product.links?.docs);
   if (!slug) return { ok: false, reason: 'no slug' };
 
   const landing = await httpGet(`${DOC_HOST}/product/${slug}`);
-  if (!landing) return { ok: false, reason: 'landing 404' };
+  if (!landing) return { ok: false, reason: 'landing unreachable' };
 
-  const major = extractLatestMajor(landing);
-  if (!major) return { ok: false, reason: 'no major parsed' };
+  const majors = extractCurrentMajors(slug, landing);
+  const ga = extractCurrentGa(slug, landing, majors);
+  if (!ga) {
+    return {
+      ok: false,
+      reason: majors.length
+        ? `no GA found within current majors [${majors.join(', ')}]`
+        : 'no version parsed',
+    };
+  }
 
-  const rn = await tryReleaseNotes(slug, major);
-  if (!rn) return { ok: false, reason: 'release notes unreachable', major };
+  return { ok: true, version: ga, majors };
+}
 
-  const patch = extractLatestPatch(rn.html, major) || extractLatestPatch(rn.html);
-  if (!patch) return { ok: false, reason: 'no patch parsed', major };
+// Products that run FortiOS directly. Their docs hubs lag mainline FortiOS,
+// so we copy firmware from the FortiGate entry rather than trust the scrape
+// for these slugs. Removing this list will surface stale docs-hub versions
+// (e.g., 5.4.x for FortiCarrier) which are misleading.
+const FORTIOS_FAMILY = ['fortigate-5000', 'fortigate-6000', 'fortigate-7000', 'forticarrier'];
 
-  return { ok: true, version: patch, major, source: rn.url };
+function inheritFortiOSFamily(products) {
+  const fg = products.find((p) => p.id === 'fortigate');
+  if (!fg || !fg.firmware) return [];
+  const inherited = [];
+  for (const id of FORTIOS_FAMILY) {
+    const p = products.find((x) => x.id === id);
+    if (!p || !p.firmware) continue;
+    const prior = p.firmware.ga;
+    p.firmware = { ...fg.firmware };
+    if (prior !== fg.firmware.ga) inherited.push(`${p.name}: ${prior || '∅'} -> ${fg.firmware.ga} (inherited)`);
+  }
+  return inherited;
 }
 
 async function main() {
   const raw = await readFile(DATA_PATH, 'utf8');
   const data = JSON.parse(raw);
 
-  const stats = { checked: 0, skipped: 0, updated: 0, failures: 0, changes: [] };
+  const stats = { checked: 0, skipped: 0, updated: 0, failures: 0, inherited: 0, changes: [], failed: [] };
   const todayIso = today();
+  const fortiOsFamily = new Set(FORTIOS_FAMILY);
 
   for (const product of data.products) {
     if (product.firmware === null || product.firmware === undefined) {
+      stats.skipped++;
+      continue;
+    }
+    if (fortiOsFamily.has(product.id)) {
+      // Handled after the scrape loop so we always copy the fresh
+      // fortigate value, not stale data.
       stats.skipped++;
       continue;
     }
@@ -183,8 +205,8 @@ async function main() {
     product.firmware.lastChecked = todayIso;
 
     if (!result.ok) {
-      warn(`${product.id}: ${result.reason}`);
       stats.failures++;
+      stats.failed.push(`${product.id} (${result.reason})`);
       continue;
     }
 
@@ -197,6 +219,13 @@ async function main() {
     }
   }
 
+  // Apply FortiOS-family inheritance once the scraper has refreshed
+  // fortigate. This ensures FortiCarrier and the chassis SKUs always
+  // mirror mainline FortiOS rather than the lagging docs hubs.
+  const inheritedChanges = inheritFortiOSFamily(data.products);
+  stats.inherited = inheritedChanges.length;
+  for (const c of inheritedChanges) stats.changes.push(c);
+
   data.meta = data.meta || {};
   data.meta.lastChecked = todayIso;
   data.meta.nextCheck = nextWeek();
@@ -204,10 +233,14 @@ async function main() {
 
   await writeFile(DATA_PATH, JSON.stringify(data, null, 2) + '\n', 'utf8');
 
-  log(`Done. checked=${stats.checked} updated=${stats.updated} skipped=${stats.skipped} failures=${stats.failures}`);
+  log(`Done. checked=${stats.checked} updated=${stats.updated} inherited=${stats.inherited} skipped=${stats.skipped} failures=${stats.failures}`);
   if (stats.changes.length) {
     log('Changes:');
     for (const c of stats.changes) log('  -', c);
+  }
+  if (stats.failed.length) {
+    log('Failures:');
+    for (const f of stats.failed) log('  -', f);
   }
 
   if (process.env.GITHUB_OUTPUT) {
