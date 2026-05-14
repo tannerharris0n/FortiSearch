@@ -197,6 +197,7 @@ export default function ProductDetail({ product, onClose }) {
           <Section title="Download &amp; Support">
             <div className="space-y-1.5">
               <LinkRow label="Firmware Download (Support Portal)" href={product.links?.firmwareDownload} />
+              <LinkRow label="VM / Cloud Installation Guide" href={product.links?.vmInstaller} />
               <LinkRow label="Product Page" href={product.links?.productPage} />
               <LinkRow label="Datasheet (PDF)" href={product.links?.datasheet} />
             </div>
