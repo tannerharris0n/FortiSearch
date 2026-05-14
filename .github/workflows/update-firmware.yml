@@ -1,0 +1,68 @@
+name: Update firmware data
+
+on:
+  schedule:
+    # Sundays at 06:00 UTC
+    - cron: '0 6 * * 0'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'How to apply changes'
+        required: true
+        default: 'direct'
+        type: choice
+        options:
+          - direct
+          - pr
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run updater
+        id: run
+        run: node scripts/update-products.js
+
+      - name: Detect changes
+        id: diff
+        run: |
+          if git diff --quiet -- src/data/products.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit directly
+        if: steps.diff.outputs.changed == 'true' && (github.event_name == 'schedule' || github.event.inputs.mode == 'direct')
+        run: |
+          git config user.name "fortisearch-bot"
+          git config user.email "fortisearch-bot@users.noreply.github.com"
+          git add src/data/products.json
+          git commit -m "chore: firmware data update $(date -u +%Y-%m-%d)"
+          git push
+
+      - name: Open pull request
+        if: steps.diff.outputs.changed == 'true' && github.event_name == 'workflow_dispatch' && github.event.inputs.mode == 'pr'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "chore: firmware data update $(date -u +%Y-%m-%d)"
+          title: "chore: firmware data update"
+          body: |
+            Automated firmware version refresh from docs.fortinet.com.
+
+            Review the diff in `src/data/products.json` before merging.
+          branch: bot/firmware-update
+          base: main
+          delete-branch: true
