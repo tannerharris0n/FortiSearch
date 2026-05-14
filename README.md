@@ -6,9 +6,9 @@
 [![Deploy](https://github.com/tannerharris0n/FortiSearch/actions/workflows/deploy.yml/badge.svg)](https://github.com/tannerharris0n/FortiSearch/actions/workflows/deploy.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-> **⚠️ Independent project — not affiliated with Fortinet, Inc.**
+> **⚠️ Independent project — not a Fortinet GitHub account.**
 >
-> This is **not** a Fortinet GitHub account, repository, or product. FortiSearch is built and maintained independently by [Tanner Harrison](https://tannerharrison.com), a Fortinet SE working in the field. It is not endorsed, sponsored, reviewed, or supported by Fortinet. All product names, firmware versions, and documentation links are pulled from Fortinet's public docs and lifecycle pages for convenience — the authoritative source is always Fortinet's own [docs.fortinet.com](https://docs.fortinet.com) and [Fortinet support portal](https://support.fortinet.com). "FortiGate," "FortiOS," "Fortinet," and all `Forti*` product names are trademarks of Fortinet, Inc.
+> This repository is **not** a Fortinet GitHub account, repository, or product. FortiSearch is built and maintained independently by [Tanner Harrison](https://tannerharrison.com) and is **not** endorsed, sponsored, reviewed, or supported by Fortinet, Inc. Views and code here are the maintainer's own and do not represent any employer. All Fortinet product names, trademarks, and logos are property of Fortinet, Inc. Product names, firmware versions, and documentation links are pulled from Fortinet's public docs and lifecycle pages for convenience — the authoritative source is always [docs.fortinet.com](https://docs.fortinet.com) and the [Fortinet support portal](https://support.fortinet.com).
 
 ## What it does
 
