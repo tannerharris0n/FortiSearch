@@ -6,6 +6,10 @@
 [![Deploy](https://github.com/tannerharris0n/FortiSearch/actions/workflows/deploy.yml/badge.svg)](https://github.com/tannerharris0n/FortiSearch/actions/workflows/deploy.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
+> **⚠️ Independent project — not affiliated with Fortinet, Inc.**
+>
+> This is **not** a Fortinet GitHub account, repository, or product. FortiSearch is built and maintained independently by [Tanner Harrison](https://tannerharrison.com), a Fortinet SE working in the field. It is not endorsed, sponsored, reviewed, or supported by Fortinet. All product names, firmware versions, and documentation links are pulled from Fortinet's public docs and lifecycle pages for convenience — the authoritative source is always Fortinet's own [docs.fortinet.com](https://docs.fortinet.com) and [Fortinet support portal](https://support.fortinet.com). "FortiGate," "FortiOS," "Fortinet," and all `Forti*` product names are trademarks of Fortinet, Inc.
+
 ## What it does
 
 FortiSearch is a static catalog front-end for the entire Fortinet product portfolio. Type the product line you half-remember, the tag you care about, or the deployment model you need, and the right card surfaces with versions, doc links, and lifecycle status. No login, no backend, no marketing fluff.
@@ -188,6 +192,8 @@ The `.github/workflows/deploy.yml` workflow is informational — it validates th
 - **`recommended` and `feature` versions** are hand-curated for now. The scraper currently only refreshes `ga`. Expanding to all three tracks is on the roadmap.
 - **Catalog snapshot is May 2026.** Quarterly hand-review keeps subcategory/lifecycle data accurate; the weekly scraper keeps versions accurate.
 
-## License
+## License & disclaimer
 
-[MIT](LICENSE). Not affiliated with or endorsed by Fortinet, Inc. Product names, trademarks, and logos are property of their respective owners.
+[MIT](LICENSE).
+
+**FortiSearch is an independent project.** It is **not** a Fortinet GitHub account, product, or service. The maintainer ([Tanner Harrison](https://tannerharrison.com)) is not speaking on behalf of Fortinet, Inc. This project is not affiliated with, endorsed by, sponsored by, or supported by Fortinet. All Fortinet product names, trademarks, logos, and documentation are the property of Fortinet, Inc. For authoritative product information, contact your Fortinet account team or visit [fortinet.com](https://www.fortinet.com).
